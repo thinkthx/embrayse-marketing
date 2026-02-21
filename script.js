@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 const header = document.querySelector('.site-header');
 const toggle = document.getElementById('menu-toggle');
 const nav = document.getElementById('primary-nav');

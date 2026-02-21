@@ -10,161 +10,183 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Pridi:wght@600&family=PT+Sans:wght@700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <div class="gradient-orb orb-1" aria-hidden="true"></div>
+    <div class="gradient-orb orb-2" aria-hidden="true"></div>
+    <div class="gradient-orb orb-3" aria-hidden="true"></div>
 
     <header class="site-header" id="top">
       <div class="container nav-wrap">
-        <a class="brand" href="#top" aria-label="Embrayse home">Embrayse</a>
+        <a class="brand" href="#top" aria-label="Embrayse home">
+          <img src="marketing/embrayse-logo-black-sm.png" alt="Embrayse" />
+        </a>
         <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
         <nav class="primary-nav" id="primary-nav" aria-label="Primary">
-          <a href="#pillars">Product</a>
-          <a href="#testimonials">Success Stories</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#success-stories">Success Stories</a>
           <a href="#pricing">Pricing</a>
-          <a class="btn btn-nav" href="#final-cta">Book Your Demo</a>
         </nav>
       </div>
     </header>
 
     <main id="main">
-      <section class="hero">
+      <section class="hero section-pad">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
             <h1>Aged care food services, run with confidence.</h1>
             <p class="hero-subtitle">The catering tool your staff will actually want to use.</p>
-            <a class="btn btn-primary" href="#final-cta">Book Your Demo</a>
-            <p class="trust-line">Purpose-built for residential aged care · No lock-in contract · 60-day full refund · Australian-made</p>
+            <a class="btn btn-primary" href="#book-demo">Book your demo</a>
+            <p class="hero-trust">Purpose-built for residential aged care · No lock-in contract · 60-day full refund · Australian-made</p>
           </div>
-          <div class="hero-media reveal" role="img" aria-label="Placeholder: care worker and resident at a dining table in warm natural light">
-            <div class="placeholder-label">PLACEHOLDER PHOTO<br />Care worker smiling with resident at dining table<br />Warm, real Australian aged care setting</div>
-          </div>
+          <figure class="hero-media reveal">
+            <img
+              src="marketing/hero-images/care-provider-with-resident-2.jpg"
+              alt="Care worker and resident smiling together"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </figure>
         </div>
       </section>
 
-      <section class="trust-bar">
+      <section class="customer-strip">
         <div class="container">
-          <p class="stats-line">[X] facilities · [X,XXX] beds · [X] million meals ordered · Australia &amp; UK</p>
-          <p class="placeholder-note">PLACEHOLDER: Replace [X] values with real metrics before launch.</p>
+          <p class="customer-stats">45+ Facilities, 5,000+ beds and more than 1,000,000 meals served across Australia &amp; UK</p>
           <div class="logo-strip" aria-label="Customer logos">
-            <div class="logo-item">Logo: Jimbelunga</div>
-            <div class="logo-item">Logo: Matthew Flinders Home</div>
-            <div class="logo-item">Logo: Manor Court Werribee</div>
-            <div class="logo-item">Logo: Customer 4</div>
-            <div class="logo-item">Logo: Customer 5</div>
-            <div class="logo-item">Logo: Customer 6</div>
+            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-01-bentley-wood.jpg" alt="Bentley Wood" loading="lazy" /></div>
+            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-02-southern-cross-care-nswact.jpg" alt="Southern Cross Care NSW and ACT" loading="lazy" /></div>
+            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-03-mathew-flinders.jpg" alt="Mathew Flinders Home" loading="lazy" /></div>
+            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-04-manor-court.jpg" alt="Manor Court" loading="lazy" /></div>
+            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-05-vermont.jpg" alt="Vermont" loading="lazy" /></div>
           </div>
         </div>
       </section>
 
-      <section class="tension section-soft">
-        <div class="container narrow reveal">
-          <h2>Sound familiar?</h2>
-          <p>
-            Resident preferences scribbled on a laminated card from two years ago. Allergy information buried in a folder nobody
-            checks. Kitchen staff relying on memory and hope. And the constant, low-grade anxiety that something will go wrong
-            or that the next audit will expose what you already know.
-          </p>
-          <p class="pivot">It doesn't have to be this way.</p>
-          <p class="kicker"><strong>Other tools digitise the complexity. Embrayse removes it.</strong></p>
+      <section class="split section-pad">
+        <div class="container split-grid">
+          <figure class="visual-card reveal">
+            <img src="marketing/hero-images/CareProviderWithResident 1.jpg" alt="Care provider speaking with a resident" loading="lazy" />
+          </figure>
+          <div class="split-copy reveal">
+            <h2>Sound familiar?</h2>
+            <ul class="sound-list">
+              <li>Resident preferences scribbled on a laminated card from two years ago.</li>
+              <li>Allergy information buried in a folder nobody checks.</li>
+              <li>Kitchen staff relying on memory and hope.</li>
+              <li>And the constant, low-grade anxiety that something will go wrong or that the next audit will expose what you already know.</li>
+            </ul>
+            <p><strong>It doesn't have to be this way.</strong></p>
+            <p>Other tools digitise the complexity.<br /><em>Embrayse removes it.</em></p>
+          </div>
         </div>
       </section>
 
-      <section class="quote-interrupt">
-        <div class="container narrow reveal">
-          <blockquote>
-            "After 32 years in Aged Care, never would I think that a software product would streamline the dining experience
-            like this. I am so glad we went with Embrayse."
-          </blockquote>
-          <p class="quote-meta">Sharen, Environmental Services Manager, Jimbelunga</p>
-        </div>
-      </section>
-
-      <section class="pillars" id="pillars">
+      <section class="quote-block">
         <div class="container">
-          <article class="pillar reveal">
-            <div>
-              <h3>Confidence that every plate is right.</h3>
-              <p>
-                Allergies, textures, medical conditions, the stakes are real. Embrayse wraps a safety net around every meal so your
-                team can serve with certainty, not anxiety.
-              </p>
-              <ul>
-                <li><strong>Smart safety warnings</strong> Automatic alerts for allergies, food textures, and medical conditions before an order is confirmed.</li>
-                <li><strong>Resident dietary profiles</strong> Living, detailed profiles that capture every aspect of eating needs from IDDSI textures to dislikes, utensils, and portion preferences.</li>
-                <li><strong>Docketing</strong> Restaurant-style dockets with full dietary details printed for every plate, every service.</li>
-              </ul>
-            </div>
-            <div class="media-placeholder" role="img" aria-label="Placeholder: safety warnings screenshot">
-              PLACEHOLDER SCREENSHOT<br />Safety alerts + dietary profile workflow
-            </div>
-          </article>
-
-          <article class="pillar pillar-reverse reveal">
-            <div>
-              <h3>So simple, your team will say "That's it?"</h3>
-              <p>
-                Your staff didn't sign up to learn complex software. They signed up to care for people. Embrayse is intuitive enough
-                to learn with minimal training, easy enough to actually enjoy using.
-              </p>
-              <ul>
-                <li><strong>Intuitive interface</strong> Designed with clinical and hospitality staff across Australian aged care homes.</li>
-                <li><strong>Photo menus</strong> Show residents real photos of meals on a tablet so choice becomes a conversation.</li>
-                <li><strong>TV menu boards</strong> Automated menu displays for dining rooms that build excitement around meal times.</li>
-                <li><strong>We get you up and running</strong> Onsite implementation, training, and ongoing support.</li>
-              </ul>
-            </div>
-            <div class="media-placeholder" role="img" aria-label="Placeholder: simple ordering flow video or screenshot">
-              PLACEHOLDER VISUAL<br />"That's it?" ordering flow
-            </div>
-          </article>
-
-          <article class="pillar reveal">
-            <div>
-              <h3>See everything. Guess nothing.</h3>
-              <p>
-                Paper keeps you in the dark. Embrayse gives you a live view of your food services, orders, patterns, nutrition,
-                compliance, across every facility.
-              </p>
-              <ul>
-                <li><strong>Kitchen reports</strong> Prep summaries, special notes, and intelligent filters so kitchen staff have exactly what they need.</li>
-                <li><strong>Menu planner</strong> Plan weekly and seasonal menus across facilities with powerful copying and scheduling tools.</li>
-                <li><strong>Reporting and insights</strong> Key reports for compliance and business improvement, including PowerBI connection.</li>
-                <li><strong>Recipes and nutrition</strong> Built-in recipe builder with a comprehensive ingredient database and per-serving nutrition facts.</li>
-              </ul>
-            </div>
-            <div class="media-placeholder" role="img" aria-label="Placeholder: reporting dashboard screenshot">
-              PLACEHOLDER SCREENSHOT<br />Reporting dashboard + compliance views
-            </div>
-          </article>
-
-          <article class="pillar pillar-reverse reveal">
-            <div>
-              <h3>Every resident, known as who they are today.</h3>
-              <p>
-                Tastes change. Needs evolve. A great food service adapts with the person, not the preferences they wrote down three
-                years ago.
-              </p>
-              <ul>
-                <li><strong>Living profiles</strong> Update preferences, allergies, textures, and notes in real time.</li>
-                <li><strong>Resident feedback</strong> Collect feedback on meals and dining experience to drive continuous improvement.</li>
-                <li><strong>Orders with context</strong> Capture custom notes, portion sizes, and regular order items.</li>
-                <li><strong>eMeals mobile app</strong> Families and residents can view menus and order meals directly.</li>
-              </ul>
-            </div>
-            <div class="media-placeholder" role="img" aria-label="Placeholder: resident and care worker using a tablet">
-              PLACEHOLDER PHOTO<br />Resident choosing meal with care worker
-            </div>
-          </article>
+          <div class="quote-panel soft-card reveal">
+            <blockquote>
+              "After 32 years in Aged Care, never would I think that a software product would streamline the dining experience like
+              this. I am so glad we went with Embrayse."
+            </blockquote>
+            <p class="quote-author"><strong>Sharen</strong><br />Environmental Services Manager, Jimbelunga</p>
+          </div>
         </div>
       </section>
 
-      <section class="thats-it">
+      <section class="split section-pad" id="benefits">
+        <div class="container split-grid">
+          <div class="split-copy reveal">
+            <h2>Confidence that every plate is right.</h2>
+            <p>
+              Allergies, textures, medical conditions, the stakes are real. Embrayse wraps a safety net around every meal so your team
+              can serve with certainty, not anxiety.
+            </p>
+            <div class="feature-list">
+              <article class="feature-item soft-card"><strong>Smart safety warnings.</strong> Automatic alerts for allergies, food textures, and medical conditions before an order is confirmed.</article>
+              <article class="feature-item soft-card"><strong>Resident dietary profiles.</strong> Living, detailed profiles that capture every aspect of eating needs from IDDSI textures to dislikes, utensils, and portion preferences.</article>
+              <article class="feature-item soft-card"><strong>Docketing.</strong> Restaurant-style dockets with full dietary details printed for every plate, every service.</article>
+            </div>
+          </div>
+          <figure class="screen-card reveal">
+            <img src="marketing/screens/Orders.png" alt="Resident order screen in Embrayse" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="split section-pad">
+        <div class="container split-grid split-grid-reverse">
+          <div class="split-copy reveal">
+            <h2>So simple, your team will say "That's it?"</h2>
+            <p>
+              Your staff didn't sign up to learn complex software. They signed up to care for people. Embrayse is intuitive enough to
+              learn with minimal training, easy enough to actually enjoy using.
+            </p>
+            <div class="feature-list">
+              <article class="feature-item soft-card"><strong>Intuitive interface.</strong> Designed with clinical and hospitality staff across Australian aged care homes.</article>
+              <article class="feature-item soft-card"><strong>Photo menus.</strong> Show residents real photos of meals on a tablet so choice becomes a conversation.</article>
+              <article class="feature-item soft-card"><strong>TV menu boards.</strong> Automated menu displays for dining rooms that build excitement around meal times.</article>
+              <article class="feature-item soft-card"><strong>We get you up and running.</strong> Onsite implementation, training, and ongoing support.</article>
+            </div>
+          </div>
+          <figure class="screen-card reveal">
+            <img src="marketing/screens/Menu iPad.png" alt="Photo menus on iPad" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="split section-pad">
+        <div class="container split-grid">
+          <div class="split-copy reveal">
+            <h2>See everything. Guess nothing.</h2>
+            <p>
+              Paper keeps you in the dark. Embrayse gives you a live view of your food services, orders, patterns, nutrition,
+              compliance, across every facility.
+            </p>
+            <div class="feature-list">
+              <article class="feature-item soft-card"><strong>Kitchen reports.</strong> Prep summaries, special notes, and intelligent filters so kitchen staff have exactly what they need.</article>
+              <article class="feature-item soft-card"><strong>Menu planner.</strong> Plan weekly and seasonal menus across facilities with powerful copying and scheduling tools.</article>
+              <article class="feature-item soft-card"><strong>Reporting and insights.</strong> Key reports for compliance and business improvement, including PowerBI connection.</article>
+              <article class="feature-item soft-card"><strong>Recipes and nutrition.</strong> Built-in recipe builder with a comprehensive ingredient database and per-serving nutrition facts.</article>
+            </div>
+          </div>
+          <figure class="screen-card reveal">
+            <img src="marketing/screens/Insights.png" alt="Food service insights dashboard in Embrayse" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="split section-pad">
+        <div class="container split-grid split-grid-reverse">
+          <div class="split-copy reveal">
+            <h2>Every resident, known as who they are today.</h2>
+            <p>
+              Tastes change. Needs evolve. A great food service adapts with the person, not the preferences they wrote down three years
+              ago.
+            </p>
+            <div class="feature-list">
+              <article class="feature-item soft-card"><strong>Living profiles.</strong> Update preferences, allergies, textures, and notes in real time from your person management system.</article>
+              <article class="feature-item soft-card"><strong>Resident feedback.</strong> Collect feedback on meals and dining experience to drive continuous improvement.</article>
+              <article class="feature-item soft-card"><strong>Orders with context.</strong> Capture custom notes, portion sizes, and regular order items.</article>
+              <article class="feature-item soft-card"><strong>eMeals mobile app.</strong> Families and residents can view menus and order meals directly.</article>
+            </div>
+          </div>
+          <figure class="phone-stack reveal" aria-label="eMeals app on phone screens">
+            <img class="phone phone-back" src="marketing/screens/eMealsPhone2.png" alt="eMeals screen one" loading="lazy" />
+            <img class="phone phone-front" src="marketing/screens/eMealsPhone.png" alt="eMeals screen two" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="easy-strip section-muted">
         <div class="container narrow reveal">
-          <h2>The reaction we hear most?</h2>
-          <p class="big-line">"That's it? Really?"</p>
+          <h2>That easy? Really?</h2>
           <p>
             Every team expects the switch to be hard. New software. New process. Weeks of training. Then they start using Embrayse and
             the hardest part is already behind them. Simple to learn. Easy to run. From day one.
@@ -172,136 +194,135 @@
         </div>
       </section>
 
-      <section class="testimonials section-soft" id="testimonials">
+      <section class="stories section-pad" id="success-stories">
         <div class="container">
-          <h2 class="center reveal">Trusted by teams on the floor.</h2>
-          <div class="testimonial-grid">
-            <article class="testimonial-card reveal">
+          <h2 class="center reveal">Trusted by teams on the floor</h2>
+          <div class="story-grid">
+            <article class="story-card soft-card reveal">
+              <div class="story-head">
+                <img src="marketing/stories/story-sharen.jpg" alt="Sharen" loading="lazy" />
+                <p><strong>Sharen</strong><br />Jimbelunga</p>
+              </div>
               <p>
-                "Never in 32 years would I think software could streamline the dining experience like this. The Residents enjoy making
-                choices. Paper is less wasted. It's like room service in a hotel."
+                "After 32 years in Aged Care, never would I think that a software product would streamline the dining experience like
+                this. I am so glad we went with Embrayse."
               </p>
-              <p class="person">Sharen</p>
-              <p class="role">Environmental Services Manager, Jimbelunga</p>
             </article>
-            <article class="testimonial-card reveal">
+            <article class="story-card soft-card reveal">
+              <div class="story-head">
+                <img src="marketing/stories/story-monica.jpg" alt="Monica" loading="lazy" />
+                <p><strong>Monica</strong><br />Mathew Flinders Home</p>
+              </div>
               <p>
                 "It made complete sense to move from an old-fashioned paper system. Even staff with limited computer skills quickly
                 learnt their way around. Our Care Recipients absolutely love the menu board."
               </p>
-              <p class="person">Monica</p>
-              <p class="role">Matthew Flinders Home</p>
             </article>
-            <article class="testimonial-card reveal">
+            <article class="story-card soft-card reveal">
+              <div class="story-head">
+                <img src="marketing/stories/story-carmelo.jpg" alt="Carmelo" loading="lazy" />
+                <p><strong>Carmelo</strong><br />Manor Court Werribe</p>
+              </div>
               <p>
                 "The system is very easy to use. It makes setting up menus and dietary requirements a great deal easier. We now have
                 evidence of what a resident is receiving without the need for a paper trail."
               </p>
-              <p class="person">Carmelo</p>
-              <p class="role">Manor Court Werribee</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="compliance">
-        <div class="container reveal">
-          <div class="narrow">
+      <section class="standards section-pad">
+        <div class="container standards-grid">
+          <div class="standards-copy reveal">
             <h2>Built for the new Aged Care Standards.</h2>
             <p>
               The revised Australian Aged Care Quality Standards place a strong focus on food and nutrition. Embrayse is designed to
               help you meet and exceed these standards with integrations, reporting, security, and business continuity built in.
             </p>
+            <div class="feature-list">
+              <article class="feature-item soft-card"><strong>Clinical integrations.</strong> Connects with your existing clinical systems to reduce duplication. At no additional cost.</article>
+              <article class="feature-item soft-card"><strong>Compliance reporting.</strong> Own your data. Access key reports to stay audit-ready. PowerBI-compatible.</article>
+              <article class="feature-item soft-card"><strong>Australian data hosting.</strong> Your data stays in Australia with SSO, role-based access, and IRAP-certified services.</article>
+              <article class="feature-item soft-card"><strong>Business continuity.</strong> Real-time backups and auto-generated printable PDFs so your kitchen never stops.</article>
+            </div>
           </div>
-          <div class="trust-grid">
-            <article>
-              <span class="trust-icon" aria-hidden="true">+</span>
-              <h4>Clinical integrations</h4>
-              <p>Connects with your existing clinical systems to reduce duplication.</p>
-            </article>
-            <article>
-              <span class="trust-icon" aria-hidden="true">+</span>
-              <h4>Compliance reporting</h4>
-              <p>Key reports to stay audit-ready. PowerBI-compatible.</p>
-            </article>
-            <article>
-              <span class="trust-icon" aria-hidden="true">+</span>
-              <h4>Australian data hosting</h4>
-              <p>Your data stays in Australia with SSO, role-based access, and IRAP-certified services.</p>
-            </article>
-            <article>
-              <span class="trust-icon" aria-hidden="true">+</span>
-              <h4>Business continuity</h4>
-              <p>Real-time backups and auto-generated printable PDFs so your kitchen never stops.</p>
-            </article>
+          <div class="integration-mosaic reveal" aria-label="Integration logos">
+            <div class="integration-card soft-card"><img src="marketing/integrations/integration-01-telstra-health.png" alt="Telstra Health" loading="lazy" /></div>
+            <div class="integration-card soft-card"><img src="marketing/integrations/integration-02-autumncare.png" alt="AutumnCare" loading="lazy" /></div>
+            <div class="integration-card soft-card"><img src="marketing/integrations/integration-03-CareLynx.png" alt="CareLynx" loading="lazy" /></div>
+            <div class="integration-card soft-card"><img src="marketing/integrations/integration-04-manadplus.png" alt="Manad Plus" loading="lazy" /></div>
+            <div class="integration-card soft-card"><img src="marketing/integrations/integration-05-person-centred-software.png" alt="Person Centred Software" loading="lazy" /></div>
+            <div class="integration-card soft-card"><img src="marketing/integrations/integration-06-leecare.png" alt="Leecare" loading="lazy" /></div>
           </div>
         </div>
       </section>
 
-      <section class="how-it-works section-soft">
+      <section class="steps section-muted">
         <div class="container reveal">
-          <h2 class="center">Up and running in three steps.</h2>
-          <div class="steps">
-            <article>
-              <span class="step-no">1</span>
-              <h4>Book your demo</h4>
+          <h2 class="center">Up and running in 3 steps</h2>
+          <div class="steps-grid">
+            <article class="step-card soft-card">
+              <h3>1. Book your demo</h3>
               <p>We'll learn about your needs and show you the product in action.</p>
             </article>
-            <article>
-              <span class="step-no">2</span>
-              <h4>We set you up</h4>
+            <article class="step-card soft-card">
+              <h3>2. We get you set up</h3>
               <p>Implementation, data migration, and onsite training. We do the heavy lifting.</p>
             </article>
-            <article>
-              <span class="step-no">3</span>
-              <h4>Run with confidence</h4>
+            <article class="step-card soft-card">
+              <h3>3. Run with confidence</h3>
               <p>Your team is live, your residents are served better, and paper is retired.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="pricing" id="pricing">
-        <div class="container narrow reveal">
-          <h2>Simple, transparent pricing.</h2>
-          <p class="pricing-sub">No hidden costs. No lock-in contracts. 60-day full refund policy.</p>
-          <article class="price-card">
+      <section class="pricing section-pad" id="pricing">
+        <div class="container pricing-grid reveal">
+          <div>
+            <h2>Simple, transparent pricing.</h2>
+            <p>No hidden costs. No lock-in contracts. 60-day full refund policy.</p>
+          </div>
+          <article class="price-card soft-card">
             <p class="price"><span>$7</span> per bed, per month</p>
             <ul>
               <li>$5,000 one-time setup fee (implementation + onsite training). $4,000 for each additional facility.</li>
               <li>Unlimited meals and unlimited staff accounts.</li>
               <li>Onsite training and phone + email support.</li>
             </ul>
-            <p class="footnote">Prices in AUD, excluding GST. Hardware not included.</p>
+            <p class="price-note">Prices in AUD, excluding GST. Hardware not included</p>
           </article>
         </div>
       </section>
 
-      <section class="final-cta" id="final-cta">
+      <section class="book section-muted" id="book-demo">
         <div class="container narrow reveal">
-          <h2>See why teams say "That's it?"</h2>
+          <h2>See why teams say "That easy?"</h2>
           <p>
-            In 60 minutes, we'll walk you through the product, share real success stories, and map out how Embrayse fits your facility.
-            No pressure. No hard sell. Just a conversation about running your food services with confidence.
+            In 60 minutes, we'll walk you through the product, share real success stories, and map out how Embrayse fits your
+            facility. No pressure. No hard sell. Just a conversation about running your food services with confidence.
           </p>
-          <a class="btn btn-primary" href="mailto:info@embrayse.com?subject=Book%20Your%20Demo">Book Your Demo</a>
+          <div class="booking-placeholder soft-card" role="img" aria-label="Booking form placeholder">Booking Form Placeholder</div>
+          <a class="btn btn-primary" href="mailto:info@embrayse.com?subject=Book%20your%20demo">Book your demo</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p class="footer-brand">Embrayse</p>
-        <p>Made in Brisbane, Australia</p>
-        <nav aria-label="Footer">
-          <a href="#pillars">Benefits</a>
-          <a href="#testimonials">Success Stories</a>
+        <p class="made-in">Made in Brisbane, Australia</p>
+        <img class="footer-logo" src="marketing/embrayse-logo-black.png" alt="Embrayse" loading="lazy" />
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#benefits">Benefits</a>
+          <a href="#success-stories">Success Stories</a>
           <a href="#pricing">Pricing</a>
-          <a href="#top">Insights</a>
           <a href="#top">Privacy Policy</a>
         </nav>
-        <a href="mailto:info@embrayse.com">info@embrayse.com</a>
-        <p>© 2025 Embrayse</p>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Embrayse</p>
+          <a href="mailto:info@embrayse.com">info@embrayse.com</a>
+        </div>
       </div>
     </footer>
 
