@@ -11,27 +11,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Pridi:wght@600&family=PT+Sans:wght@700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="gradient-orb orb-1" aria-hidden="true"></div>
-    <div class="gradient-orb orb-2" aria-hidden="true"></div>
-    <div class="gradient-orb orb-3" aria-hidden="true"></div>
 
     <header class="site-header" id="top">
       <div class="container nav-wrap">
         <a class="brand" href="#top" aria-label="Embrayse home">
           <img src="marketing/embrayse-logo-black-sm.png" alt="Embrayse" />
         </a>
+        <div class="nav-right">
+          <a class="nav-link" href="#pricing">See pricing</a>
+          <a class="btn btn-primary" href="#book-demo">Book your demo</a>
+        </div>
         <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
         <nav class="primary-nav" id="primary-nav" aria-label="Primary">
           <a href="#benefits">Benefits</a>
           <a href="#success-stories">Success Stories</a>
           <a href="#pricing">Pricing</a>
+          <a href="#book-demo">Book your demo</a>
         </nav>
       </div>
     </header>
@@ -40,34 +42,51 @@
       <section class="hero section-pad">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
+            <span class="pill-chip">Aged Care Food Services Software</span>
             <h1>Aged care food services, run with confidence.</h1>
+            <hr class="dotted-rule" />
             <p class="hero-subtitle">The catering tool your staff will actually want to use.</p>
             <a class="btn btn-primary" href="#book-demo">Book your demo</a>
-            <p class="hero-trust">Purpose-built for residential aged care · No lock-in contract · 60-day full refund · Australian-made</p>
+            <p class="hero-trust">No lock-in contract · 60-day full refund · Australian-made</p>
           </div>
           <figure class="hero-media reveal">
-            <img
-              src="marketing/hero-images/care-provider-with-resident-2.jpg"
-              alt="Care worker and resident smiling together"
-              loading="eager"
-              fetchpriority="high"
-            />
+            <div class="hero-screen-card">
+              <img src="marketing/screens/Orders.png" alt="Resident order screen in Embrayse" loading="eager" fetchpriority="high" />
+            </div>
+            <div class="hero-photo-inset" aria-hidden="true">
+              <img src="marketing/hero-images/care-provider-with-resident-2.jpg" alt="" />
+            </div>
           </figure>
         </div>
       </section>
 
       <section class="customer-strip">
         <div class="container">
-          <p class="customer-stats">45+ Facilities, 5,000+ beds and more than 1,000,000 meals served across Australia &amp; UK</p>
+          <div class="stats-row">
+            <div class="stat-box">
+              <div class="stat-number">45+</div>
+              <div class="stat-label">Facilities</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">5,000+</div>
+              <div class="stat-label">Beds</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">1,000,000+</div>
+              <div class="stat-label">Meals served</div>
+            </div>
+          </div>
           <div class="logo-strip" aria-label="Customer logos">
-            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-01-bentley-wood.jpg" alt="Bentley Wood" loading="lazy" /></div>
-            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-02-southern-cross-care-nswact.jpg" alt="Southern Cross Care NSW and ACT" loading="lazy" /></div>
-            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-03-mathew-flinders.jpg" alt="Mathew Flinders Home" loading="lazy" /></div>
-            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-04-manor-court.jpg" alt="Manor Court" loading="lazy" /></div>
-            <div class="logo-item soft-card"><img src="marketing/customer-logos/logo-05-vermont.jpg" alt="Vermont" loading="lazy" /></div>
+            <div class="logo-item"><img src="marketing/customer-logos/logo-01-bentley-wood.jpg" alt="Bentley Wood" loading="lazy" /></div>
+            <div class="logo-item"><img src="marketing/customer-logos/logo-02-southern-cross-care-nswact.jpg" alt="Southern Cross Care NSW and ACT" loading="lazy" /></div>
+            <div class="logo-item"><img src="marketing/customer-logos/logo-03-mathew-flinders.jpg" alt="Mathew Flinders Home" loading="lazy" /></div>
+            <div class="logo-item"><img src="marketing/customer-logos/logo-04-manor-court.jpg" alt="Manor Court" loading="lazy" /></div>
+            <div class="logo-item"><img src="marketing/customer-logos/logo-05-vermont.jpg" alt="Vermont" loading="lazy" /></div>
           </div>
         </div>
       </section>
+
+      <hr class="dotted-rule section-divider" />
 
       <section class="split section-pad">
         <div class="container split-grid">
@@ -100,9 +119,12 @@
         </div>
       </section>
 
+      <hr class="dotted-rule section-divider" />
+
       <section class="split section-pad" id="benefits">
         <div class="container split-grid">
           <div class="split-copy reveal">
+            <span class="pill-chip">Built for safety</span>
             <h2>Confidence that every plate is right.</h2>
             <p>
               Allergies, textures, medical conditions, the stakes are real. Embrayse wraps a safety net around every meal so your team
@@ -115,7 +137,10 @@
             </div>
           </div>
           <figure class="screen-card reveal">
-            <img src="marketing/screens/Orders.png" alt="Resident order screen in Embrayse" loading="lazy" />
+            <video autoplay muted loop playsinline>
+              <source src="marketing/Embrayse - prep to docket.mp4" type="video/mp4" />
+              <img src="marketing/screens/Orders.png" alt="Resident order screen in Embrayse" loading="lazy" />
+            </video>
           </figure>
         </div>
       </section>
@@ -184,7 +209,7 @@
         </div>
       </section>
 
-      <section class="easy-strip section-muted">
+      <section class="easy-strip">
         <div class="container narrow reveal">
           <h2>That easy? Really?</h2>
           <p>
@@ -196,45 +221,49 @@
 
       <section class="stories section-pad" id="success-stories">
         <div class="container">
+          <span class="pill-chip">Success stories</span>
           <h2 class="center reveal">Trusted by teams on the floor</h2>
           <div class="story-grid">
-            <article class="story-card soft-card reveal">
+            <article class="story-card reveal">
               <div class="story-head">
                 <img src="marketing/stories/story-sharen.jpg" alt="Sharen" loading="lazy" />
                 <p><strong>Sharen</strong><br />Jimbelunga</p>
               </div>
-              <p>
+              <blockquote>
                 "After 32 years in Aged Care, never would I think that a software product would streamline the dining experience like
                 this. I am so glad we went with Embrayse."
-              </p>
+              </blockquote>
             </article>
-            <article class="story-card soft-card reveal">
+            <article class="story-card reveal">
               <div class="story-head">
                 <img src="marketing/stories/story-monica.jpg" alt="Monica" loading="lazy" />
                 <p><strong>Monica</strong><br />Mathew Flinders Home</p>
               </div>
-              <p>
+              <blockquote>
                 "It made complete sense to move from an old-fashioned paper system. Even staff with limited computer skills quickly
                 learnt their way around. Our Care Recipients absolutely love the menu board."
-              </p>
+              </blockquote>
             </article>
-            <article class="story-card soft-card reveal">
+            <article class="story-card reveal">
               <div class="story-head">
                 <img src="marketing/stories/story-carmelo.jpg" alt="Carmelo" loading="lazy" />
                 <p><strong>Carmelo</strong><br />Manor Court Werribe</p>
               </div>
-              <p>
+              <blockquote>
                 "The system is very easy to use. It makes setting up menus and dietary requirements a great deal easier. We now have
                 evidence of what a resident is receiving without the need for a paper trail."
-              </p>
+              </blockquote>
             </article>
           </div>
         </div>
       </section>
 
+      <hr class="dotted-rule section-divider" />
+
       <section class="standards section-pad">
         <div class="container standards-grid">
           <div class="standards-copy reveal">
+            <span class="pill-chip">Compliance-ready</span>
             <h2>Built for the new Aged Care Standards.</h2>
             <p>
               The revised Australian Aged Care Quality Standards place a strong focus on food and nutrition. Embrayse is designed to
@@ -258,7 +287,7 @@
         </div>
       </section>
 
-      <section class="steps section-muted">
+      <section class="steps section-pad">
         <div class="container reveal">
           <h2 class="center">Up and running in 3 steps</h2>
           <div class="steps-grid">
@@ -278,6 +307,8 @@
         </div>
       </section>
 
+      <hr class="dotted-rule section-divider" />
+
       <section class="pricing section-pad" id="pricing">
         <div class="container pricing-grid reveal">
           <div>
@@ -296,7 +327,10 @@
         </div>
       </section>
 
-      <section class="book section-muted" id="book-demo">
+      <section class="book" id="book-demo">
+        <div class="book-bg">
+          <img src="assets/images/hero-kitchen.jpg" alt="" aria-hidden="true" />
+        </div>
         <div class="container narrow reveal">
           <h2>See why teams say "That easy?"</h2>
           <p>
@@ -304,7 +338,7 @@
             facility. No pressure. No hard sell. Just a conversation about running your food services with confidence.
           </p>
           <div class="booking-placeholder soft-card" role="img" aria-label="Booking form placeholder">Booking Form Placeholder</div>
-          <a class="btn btn-primary" href="mailto:info@embrayse.com?subject=Book%20your%20demo">Book your demo</a>
+          <a class="btn btn-light" href="mailto:info@embrayse.com?subject=Book%20your%20demo">Book your demo</a>
         </div>
       </section>
     </main>
