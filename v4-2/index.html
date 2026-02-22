@@ -32,7 +32,6 @@
           <a href="#benefits">Benefits</a>
           <a href="#success-stories">Success Stories</a>
           <a href="#pricing">Pricing</a>
-          <a href="#book-demo">Book your demo</a>
           <a class="cta-pill" href="#book-demo">Book your demo</a>
         </nav>
       </div>
@@ -56,12 +55,16 @@
             <p class="hero-proof">No lock-in contract · 60-day full refund · Australian-made</p>
           </div>
 
-          <figure class="hero-canvas reveal">
-            <div class="hero-screen">
-              <img src="../marketing/screens/Orders.png" alt="Resident order screen in Embrayse" loading="eager" fetchpriority="high" />
+          <figure class="hero-canvas hero-composite reveal" data-hero-parallax>
+            <div class="hero-layer hero-layer--base">
+              <img src="../marketing/screens/CareHeroPart1.png" alt="Nurse and resident using Embrayse at meal service" loading="eager" fetchpriority="high" />
             </div>
-            <figcaption class="hero-caption">Live orders. Safety checks. Service clarity.</figcaption>
-            <img class="hero-cutout" src="../marketing/hero-images/care-provider-with-resident-2.jpg" alt="Care provider speaking with resident" loading="lazy" />
+            <div class="hero-layer hero-layer--card" aria-hidden="true">
+              <img src="../marketing/screens/CareHeroPart2.png" alt="" loading="eager" />
+            </div>
+            <div class="hero-layer hero-layer--panel" aria-hidden="true">
+              <img src="../marketing/screens/CareHeroPart3.png" alt="" loading="eager" />
+            </div>
           </figure>
         </div>
       </section>
@@ -104,7 +107,7 @@
       <section class="section-block scene-ink">
         <div class="container two-col">
           <figure class="frame reveal">
-            <img src="../marketing/hero-images/CareProviderWithResident 1.jpg" alt="Care provider speaking with a resident" loading="lazy" />
+            <img src="../marketing/hero-images/paper-sheet-redacted.jpg" alt="Paper meal order sheet on a kitchen counter" loading="lazy" />
           </figure>
           <div class="copy reveal">
             <p class="kicker">SOUND FAMILIAR?</p>
@@ -121,6 +124,30 @@
         </div>
       </section>
 
+      <section class="section-block capabilities" id="benefits">
+        <div class="container reveal">
+          <p class="kicker">THE PLATFORM</p>
+          <h2>One operating system for<br />safety, teams, and service quality.</h2>
+          <div class="cap-grid">
+            <article>
+              <i class="hgi hgi-stroke hgi-shield-01 hi-icon" aria-hidden="true"></i>
+              <h3>Built for<br />safety</h3>
+              <p>Automatic checks that reduce risk before a meal is served.</p>
+            </article>
+            <article>
+              <i class="hgi hgi-stroke hgi-tablet-01 hi-icon" aria-hidden="true"></i>
+              <h3>Simple for<br />teams</h3>
+              <p>A UI staff can learn quickly, even with limited computer experience.</p>
+            </article>
+            <article>
+              <i class="hgi hgi-stroke hgi-dashboard-circle hi-icon" aria-hidden="true"></i>
+              <h3>Clear for<br />leaders</h3>
+              <p>Real-time visibility across orders, compliance, and nutrition performance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section-block quote-wave">
         <div class="container reveal">
           <blockquote class="quote-card">
@@ -129,30 +156,6 @@
             </p>
             <footer><strong>Sharen</strong> · Environmental Services Manager, Jimbelunga</footer>
           </blockquote>
-        </div>
-      </section>
-
-      <section class="section-block capabilities" id="benefits">
-        <div class="container reveal">
-          <p class="kicker">THE PLATFORM</p>
-          <h2>One operating system for safety, teams, and service quality.</h2>
-          <div class="cap-grid">
-            <article>
-              <i class="hgi hgi-stroke hgi-shield-01 hi-icon" aria-hidden="true"></i>
-              <h3>Built for safety</h3>
-              <p>Automatic checks that reduce risk before a meal is served.</p>
-            </article>
-            <article>
-              <i class="hgi hgi-stroke hgi-tablet-01 hi-icon" aria-hidden="true"></i>
-              <h3>Simple for teams</h3>
-              <p>A UI staff can learn quickly, even with limited computer experience.</p>
-            </article>
-            <article>
-              <i class="hgi hgi-stroke hgi-dashboard-circle hi-icon" aria-hidden="true"></i>
-              <h3>Clear for leaders</h3>
-              <p>Real-time visibility across orders, compliance, and nutrition performance.</p>
-            </article>
-          </div>
         </div>
       </section>
 
@@ -196,8 +199,8 @@
               <article><i class="hgi hgi-stroke hgi-user-group hi-icon" aria-hidden="true"></i><span><strong>We get you up and running.</strong> Onsite implementation, training, and ongoing support.</span></article>
             </div>
           </div>
-          <figure class="frame reveal">
-            <img src="../marketing/screens/Menu iPad.png" alt="Photo menus on iPad" loading="lazy" />
+          <figure class="frame reveal simple-mockup">
+            <img src="../marketing/screens/meal-options.gif" alt="Embrayse menu selection flow on iPad" loading="lazy" />
           </figure>
         </div>
       </section>
@@ -206,7 +209,7 @@
         <div class="container two-col">
           <div class="copy reveal">
             <p class="kicker">OPERATIONAL INTELLIGENCE</p>
-            <h2>See everything. Guess nothing.</h2>
+            <h2>See everything.<br />Guess nothing.</h2>
             <p>
               Paper keeps you in the dark. Embrayse gives you a live view of your food services, orders, patterns, nutrition,
               compliance, across every facility.
@@ -227,7 +230,7 @@
       <section class="section-block scene-paper">
         <div class="container two-col reverse">
           <div class="copy reveal">
-            <p class="kicker">PERSONALIZED EXPERIENCE</p>
+            <p class="kicker">PERSONALISED EXPERIENCE</p>
             <h2>Every resident, known as who they are today.</h2>
             <p>
               Tastes change. Needs evolve. A great food service adapts with the person, not the preferences they wrote down three years
@@ -329,7 +332,7 @@
 
           <div class="bento-grid">
             <article class="bento-card bento-intro">
-              <h3>Simple, transparent pricing.</h3>
+              <h3>Simple,<br />transparent<br />pricing.</h3>
               <p>No hidden costs. No lock-in contracts. 60-day full refund policy.</p>
             </article>
 
@@ -397,6 +400,34 @@
         </div>
       </div>
     </footer>
+
+    <aside class="hero-debug" id="hero-debug" hidden>
+      <div class="hero-debug-head">
+        <h3>Hero Debug</h3>
+        <button type="button" id="hero-debug-rerun">Rerun animation</button>
+      </div>
+      <p>Enable with <code>?debugHero=1</code> or <code>#debug-hero</code>.</p>
+      <div class="hero-debug-grid">
+        <label>Card width % <input type="number" step="0.1" data-css-var="--hero-card-width" data-unit="%" /></label>
+        <label>Card left % <input type="number" step="0.1" data-css-var="--hero-card-left" data-unit="%" /></label>
+        <label>Card top % <input type="number" step="0.1" data-css-var="--hero-card-top" data-unit="%" /></label>
+        <label>Panel width % <input type="number" step="0.1" data-css-var="--hero-panel-width" data-unit="%" /></label>
+        <label>Panel right % <input type="number" step="0.1" data-css-var="--hero-panel-right" data-unit="%" /></label>
+        <label>Panel bottom % <input type="number" step="0.1" data-css-var="--hero-panel-bottom" data-unit="%" /></label>
+        <label>Entry duration ms <input type="number" step="10" data-css-var="--hero-enter-duration" data-unit="ms" /></label>
+        <label>Base delay ms <input type="number" step="10" data-css-var="--hero-base-delay" data-unit="ms" /></label>
+        <label>Card delay ms <input type="number" step="10" data-css-var="--hero-card-delay" data-unit="ms" /></label>
+        <label>Panel delay ms <input type="number" step="10" data-css-var="--hero-panel-delay" data-unit="ms" /></label>
+        <label>Card start X px <input type="number" step="1" data-css-var="--hero-card-start-x" data-unit="px" /></label>
+        <label>Card start Y px <input type="number" step="1" data-css-var="--hero-card-start-y" data-unit="px" /></label>
+        <label>Panel start X px <input type="number" step="1" data-css-var="--hero-panel-start-x" data-unit="px" /></label>
+        <label>Panel start Y px <input type="number" step="1" data-css-var="--hero-panel-start-y" data-unit="px" /></label>
+        <label>Parallax X px <input type="number" step="1" data-js-var="parallaxX" /></label>
+        <label>Parallax Y px <input type="number" step="1" data-js-var="parallaxY" /></label>
+        <label>Parallax easing <input type="number" min="0.01" max="0.5" step="0.01" data-js-var="parallaxEase" /></label>
+      </div>
+      <button type="button" id="hero-debug-reset">Reset defaults</button>
+    </aside>
 
     <script src="script.js"></script>
   </body>
