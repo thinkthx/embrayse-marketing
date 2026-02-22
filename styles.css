@@ -259,6 +259,10 @@ h3 {
   align-self: center;
 }
 
+.hero-copy h1 {
+  margin-top: 0;
+}
+
 .hero-subtitle {
   margin-top: 1rem;
   font-size: 1.14rem;
@@ -271,12 +275,6 @@ h3 {
   gap: 0.7rem;
 }
 
-.hero-proof {
-  margin-top: 1rem;
-  color: var(--muted);
-  font-weight: 600;
-}
-
 .hero-canvas {
   --px: 0px;
   --py: 0px;
@@ -285,6 +283,14 @@ h3 {
   margin-left: 0;
   margin-right: -20%;
   transform: rotate(-1.1deg);
+}
+
+.hero-main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 36px;
+  border: 2px solid var(--border);
 }
 
 .hero-composite {
@@ -629,7 +635,7 @@ h3 {
 }
 
 .capabilities h2 {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .cap-grid {
@@ -805,7 +811,7 @@ h3 {
 }
 
 .stories h2 {
-  margin-top: 0.9rem;
+  margin-top: 0;
 }
 
 .stories {
@@ -922,7 +928,7 @@ h3 {
 }
 
 .process-pricing h2 {
-  margin-top: 0.8rem;
+  margin-top: 0;
   max-width: 24ch;
 }
 
