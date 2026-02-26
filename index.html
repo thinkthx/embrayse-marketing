@@ -428,5 +428,15 @@
     </aside>
 
     <script src="script.js"></script>
+    <nav class="version-toggle" aria-label="Version switcher">
+      <a href="index.html" class="ver-btn ver-btn--active">v1</a>
+      <a href="index-v2.html" class="ver-btn">v2</a>
+    </nav>
+    <style>
+.version-toggle{position:fixed;bottom:1.2rem;left:1.2rem;z-index:100;display:flex;gap:.25rem;background:rgba(25,22,27,.06);border:1px solid rgba(25,22,27,.14);border-radius:999px;padding:.2rem;backdrop-filter:blur(4px);opacity:.55;transition:opacity 200ms;font-family:"Manrope",sans-serif;}
+.version-toggle:hover{opacity:1;}
+.ver-btn{display:inline-flex;padding:.2rem .55rem;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.03em;color:#19161b;text-decoration:none;}
+.ver-btn--active{background:#19161b;color:#fff;}
+    </style>
   </body>
 </html>
