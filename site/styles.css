@@ -582,7 +582,7 @@ button {
   grid-template-columns: 1fr;
   gap: 0;
   align-items: start;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   background: var(--paper);
   border-radius: var(--radius);
   overflow: hidden;
@@ -593,8 +593,9 @@ button {
   .safety__feature {
     grid-template-columns: 1fr 1.4fr;
     gap: 2rem;
-    padding: 2rem 0 0 2rem;
+    padding: 2rem 2rem 0 2rem;
     grid-template-rows: 1fr;
+    min-height: 480px;
   }
 
   .safety__feature .accordion {
@@ -611,7 +612,6 @@ button {
   width: 100%;
   height: auto;
   border-radius: var(--radius) var(--radius) 0 0;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
 }
 
 @media (min-width: 768px) {
@@ -653,7 +653,7 @@ button {
 }
 
 .safety__simple-copy p {
-  font-size: var(--text-body);
+  font-size: var(--text-body-sm);
   color: var(--muted);
   line-height: 1.65;
 }
@@ -731,7 +731,7 @@ button {
 
 .accordion__label {
   flex: 1;
-  font-size: var(--text-body);
+  font-size: var(--text-body-sm);
   font-weight: 700;
 }
 
@@ -747,7 +747,7 @@ button {
 
 /* When expanded, description flows inline after bold label */
 .accordion__content p {
-  font-size: var(--text-body);
+  font-size: var(--text-body-sm);
   color: var(--ink);
   line-height: 1.5;
   font-weight: 400;
@@ -764,7 +764,7 @@ button {
 
 .accordion__inline {
   display: none;
-  font-size: var(--text-body);
+  font-size: var(--text-body-sm);
   color: var(--ink);
   line-height: 1.5;
 }
@@ -864,19 +864,15 @@ button {
   background: var(--paper);
   border: 1px solid #ddd;
   border-radius: var(--radius);
-  padding: 1.5rem;
   margin-bottom: 1rem;
-  aspect-ratio: 4 / 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 
 .opint__card-img img {
   width: 100%;
-  height: auto;
-  border-radius: var(--radius-sm);
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Carousel arrows */
@@ -924,7 +920,7 @@ button {
    =========================== */
 
 .feedback {
-  padding: var(--section-py) 0;
+  padding: var(--section-py) 0 0;
 }
 
 .feedback__intro {
@@ -963,8 +959,8 @@ button {
 }
 
 .feedback__dashboard {
-  background: linear-gradient(180deg, var(--paper) 0%, var(--white) 100%);
-  padding: 3rem 0;
+  background: linear-gradient(180deg, var(--white) 0%, var(--paper) 100%);
+  padding: 3rem 0 0;
   margin-top: 3rem;
 }
 
@@ -974,35 +970,38 @@ button {
   height: auto;
   margin-inline: auto;
   display: block;
-  border-radius: var(--radius);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .feedback__surveys-images {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   position: relative;
-  padding: 1rem 0;
+  padding: 2rem 0;
+  max-width: 400px;
+  margin-inline: auto;
 }
 
 .feedback__survey {
-  border-radius: var(--radius-sm);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  grid-area: 1 / 1;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
 
 .feedback__survey--left {
-  transform: rotate(-4deg) translateX(10px);
+  transform: translateX(-60%) scale(0.88);
   z-index: 1;
 }
 
 .feedback__survey--center {
-  z-index: 2;
+  z-index: 3;
   position: relative;
 }
 
 .feedback__survey--right {
-  transform: rotate(4deg) translateX(-10px);
+  transform: translateX(60%) scale(0.88);
   z-index: 1;
 }
 
@@ -1048,34 +1047,41 @@ button {
 }
 
 .personalised__phones {
-  display: flex;
-  justify-content: center;
   position: relative;
-  padding: 1rem;
+  width: 416px;
+  height: 624px;
+  margin: 0 auto;
+  flex-shrink: 0;
 }
 
 .personalised__phone {
-  border-radius: 24px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-}
-
-.personalised__phone--back {
-  transform: rotate(-6deg) translateX(20px);
-  z-index: 1;
+  position: absolute;
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
 }
 
 .personalised__phone--front {
-  transform: rotate(3deg) translateX(-20px);
+  width: 273px;
+  right: 0;
+  top: 0;
   z-index: 2;
-  position: relative;
 }
 
-.personalised__emeals {
-  margin-top: 1.5rem;
-  font-size: var(--text-body-sm);
-  color: var(--muted);
-  line-height: 1.5;
+.personalised__phone--back {
+  width: 247px;
+  left: 0;
+  top: 36px;
+  z-index: 1;
+  transform: translateX(169px);
+  transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
 }
+
+.personalised__content.is-visible .personalised__phone--back {
+  transform: translateX(0);
+}
+
+
 
 /* ===========================
    COMPLIANCE & INTEGRATIONS
@@ -1128,12 +1134,12 @@ button {
 
 .compliance__logo-grid img {
   width: 100%;
-  height: 80px;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
   background: var(--white);
   border: 1px solid var(--border-light);
   border-radius: var(--radius);
-  padding: 1.25rem;
+  padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
