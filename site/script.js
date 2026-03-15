@@ -28,6 +28,36 @@ if (navToggle && navLinks) {
 }
 
 /* ===========================
+   EXCLUSIVE ACCORDIONS
+   =========================== */
+
+document.querySelectorAll('[data-accordion-group]').forEach(group => {
+  const items = group.querySelectorAll('[data-accordion]');
+
+  items.forEach(item => {
+    const trigger = item.querySelector('.accordion__trigger');
+    if (!trigger) return;
+
+    trigger.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+
+      // Close all in group
+      items.forEach(other => {
+        other.classList.remove('is-open');
+        const otherTrigger = other.querySelector('.accordion__trigger');
+        if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked (unless it was already open)
+      if (!isOpen) {
+        item.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+});
+
+/* ===========================
    SCROLL REVEAL
    =========================== */
 
