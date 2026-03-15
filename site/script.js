@@ -28,6 +28,33 @@ if (navToggle && navLinks) {
 }
 
 /* ===========================
+   CAROUSEL ARROWS
+   =========================== */
+
+document.querySelectorAll('[data-carousel-prev]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const carousel = btn.closest('.opint__carousel-wrapper').querySelector('.opint__carousel');
+    const card = carousel.querySelector('.opint__card');
+    if (!card) return;
+    const step = card.offsetWidth + 24;
+    const target = Math.max(0, carousel.scrollLeft - step);
+    carousel.scrollTo({ left: target, behavior: 'smooth' });
+  });
+});
+
+document.querySelectorAll('[data-carousel-next]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const carousel = btn.closest('.opint__carousel-wrapper').querySelector('.opint__carousel');
+    const card = carousel.querySelector('.opint__card');
+    if (!card) return;
+    const step = card.offsetWidth + 24;
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    const target = Math.min(maxScroll, carousel.scrollLeft + step);
+    carousel.scrollTo({ left: target, behavior: 'smooth' });
+  });
+});
+
+/* ===========================
    EXCLUSIVE ACCORDIONS
    =========================== */
 

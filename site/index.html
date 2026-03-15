@@ -82,7 +82,7 @@
 
   <!-- The Challenge -->
   <section class="challenge">
-    <div class="container">
+    <div class="container container--narrow">
       <header class="challenge__header reveal">
         <span class="kicker">What we know</span>
         <h2 class="section-title">It doesn't have to be this way</h2>
@@ -162,30 +162,30 @@
         <div class="accordion" data-accordion-group="safety">
           <div class="accordion__item is-open" data-accordion>
             <button class="accordion__trigger" aria-expanded="true">
-              <span class="accordion__dot"></span>
-              <span class="accordion__label">Smart safety warnings</span>
               <span class="accordion__plus"></span>
+              <span class="accordion__label">Smart safety warnings</span>
             </button>
+            <div class="accordion__inline"><strong>Smart safety warnings.</strong> Automatic alerts for allergies, food textures, and medical conditions before an order is confirmed.</div>
             <div class="accordion__content">
               <p>Automatic alerts for allergies, food textures, and medical conditions before an order is confirmed.</p>
             </div>
           </div>
           <div class="accordion__item" data-accordion>
             <button class="accordion__trigger" aria-expanded="false">
-              <span class="accordion__dot"></span>
-              <span class="accordion__label">Resident Dietary Profiles</span>
               <span class="accordion__plus"></span>
+              <span class="accordion__label">Resident Dietary Profiles</span>
             </button>
+            <div class="accordion__inline"><strong>Resident Dietary Profiles.</strong> Every resident's allergies, medical conditions, texture needs, and preferences in one place. Always current, always visible at the point of ordering.</div>
             <div class="accordion__content">
               <p>Every resident's allergies, medical conditions, texture needs, and preferences in one place. Always current, always visible at the point of ordering.</p>
             </div>
           </div>
           <div class="accordion__item" data-accordion>
             <button class="accordion__trigger" aria-expanded="false">
-              <span class="accordion__dot"></span>
-              <span class="accordion__label">Docketing</span>
               <span class="accordion__plus"></span>
+              <span class="accordion__label">Docketing</span>
             </button>
+            <div class="accordion__inline"><strong>Docketing.</strong> Auto-generated dockets for every meal service. Kitchen staff see exactly what to prepare, with special requirements highlighted — no manual lists, no guesswork.</div>
             <div class="accordion__content">
               <p>Auto-generated dockets for every meal service. Kitchen staff see exactly what to prepare, with special requirements highlighted — no manual lists, no guesswork.</p>
             </div>
@@ -226,28 +226,34 @@
       <p class="opint__desc reveal">Paper keeps you in the dark. Embrayse gives you a live view of your food services — orders, patterns, nutrition, compliance — across every facility.</p>
     </div>
 
-    <div class="opint__carousel reveal">
-      <div class="opint__track">
-        <div class="opint__card">
-          <img src="assets/MenuPlanner Image.png" alt="Embrayse menu planner interface" width="370" height="280" loading="lazy">
-          <h3>Menu planner</h3>
-          <p>Plan weekly and seasonal menus across facilities with powerful copying and scheduling tools.</p>
+    <div class="opint__carousel-wrapper reveal">
+      <div class="opint__carousel" id="opint-carousel">
+        <div class="opint__track">
+          <div class="opint__card">
+            <div class="opint__card-img"><img src="assets/MenuPlanner Image.png" alt="Embrayse menu planner interface" width="370" height="280" loading="lazy"></div>
+            <h3>Menu planner</h3>
+            <p>Plan weekly and seasonal menus across facilities with powerful copying and scheduling tools.</p>
+          </div>
+          <div class="opint__card">
+            <div class="opint__card-img"><img src="assets/Operational Intelligence - Kitchen Reports Image.png" alt="Kitchen reports showing prep summaries" width="370" height="280" loading="lazy"></div>
+            <h3>Kitchen reports</h3>
+            <p>Prep summaries, special notes, and intelligent filters so kitchen staff have exactly what they need.</p>
+          </div>
+          <div class="opint__card">
+            <div class="opint__card-img"><img src="assets/Operational Intelligence - Reporting Insights.png" alt="Reporting and insights dashboard" width="370" height="280" loading="lazy"></div>
+            <h3>Reporting and insights</h3>
+            <p>Key reports for compliance and business improvement, including PowerBI connection.</p>
+          </div>
+          <div class="opint__card">
+            <div class="opint__card-img"><img src="assets/Operational Intelligence - Recipes and Nutrition Image.png" alt="Recipe builder with nutrition facts" width="370" height="280" loading="lazy"></div>
+            <h3>Recipes and nutrition</h3>
+            <p>Built-in recipe builder with a comprehensive ingredient database and per-serving nutrition facts.</p>
+          </div>
         </div>
-        <div class="opint__card">
-          <img src="assets/Operational Intelligence - Kitchen Reports Image.png" alt="Kitchen reports showing prep summaries" width="370" height="280" loading="lazy">
-          <h3>Kitchen reports</h3>
-          <p>Prep summaries, special notes, and intelligent filters so kitchen staff have exactly what they need.</p>
-        </div>
-        <div class="opint__card">
-          <img src="assets/Operational Intelligence - Reporting Insights.png" alt="Reporting and insights dashboard" width="370" height="280" loading="lazy">
-          <h3>Reporting and insights</h3>
-          <p>Key reports for compliance and business improvement, including PowerBI connection.</p>
-        </div>
-        <div class="opint__card">
-          <img src="assets/Operational Intelligence - Recipes and Nutrition Image.png" alt="Recipe builder with nutrition facts" width="370" height="280" loading="lazy">
-          <h3>Recipes and nutrition</h3>
-          <p>Built-in recipe builder with a comprehensive ingredient database and per-serving nutrition facts.</p>
-        </div>
+      </div>
+      <div class="opint__arrows">
+        <button class="opint__arrow" aria-label="Scroll left" data-carousel-prev><i class="hgi-stroke hgi-arrow-left-01"></i></button>
+        <button class="opint__arrow" aria-label="Scroll right" data-carousel-next><i class="hgi-stroke hgi-arrow-right-01"></i></button>
       </div>
     </div>
   </section>
@@ -257,7 +263,7 @@
     <div class="container">
       <div class="feedback__intro reveal">
         <span class="feedback__check-icon"><i class="hgi-stroke hgi-checkmark-circle-02"></i></span>
-        <h2 class="section-title">Capture resident feedback</h2>
+        <h3 class="feedback__title">Capture resident feedback</h3>
         <p>Collect feedback on meals and dining experience to drive continuous improvement.</p>
       </div>
       <div class="feedback__surveys-images reveal">
@@ -293,20 +299,20 @@
           <div class="accordion" data-accordion-group="personalised">
             <div class="accordion__item is-open" data-accordion>
               <button class="accordion__trigger" aria-expanded="true">
-                <span class="accordion__dot"></span>
-                <span class="accordion__label">Living Resident Profiles</span>
                 <span class="accordion__plus"></span>
+                <span class="accordion__label">Living Resident Profiles</span>
               </button>
+              <div class="accordion__inline"><strong>Living Resident Profiles.</strong> See each resident as they are today — allergies, texture needs, likes, dislikes, and medical conditions — all updated in real time and visible at the point of care.</div>
               <div class="accordion__content">
                 <p>See each resident as they are today — allergies, texture needs, likes, dislikes, and medical conditions — all updated in real time and visible at the point of care.</p>
               </div>
             </div>
             <div class="accordion__item" data-accordion>
               <button class="accordion__trigger" aria-expanded="false">
-                <span class="accordion__dot"></span>
-                <span class="accordion__label">Orders with context</span>
                 <span class="accordion__plus"></span>
+                <span class="accordion__label">Orders with context</span>
               </button>
+              <div class="accordion__inline"><strong>Orders with context.</strong> Every order carries the resident's full dietary profile. Staff see warnings, preferences, and special requirements before confirming — so nothing gets missed.</div>
               <div class="accordion__content">
                 <p>Every order carries the resident's full dietary profile. Staff see warnings, preferences, and special requirements before confirming — so nothing gets missed.</p>
               </div>
