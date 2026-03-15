@@ -158,9 +158,12 @@ button {
 
 .section-hr {
   border: none;
-  border-top: 1px solid var(--ink);
+  border-top: 2px dashed var(--border-light);
   margin: 0;
 }
+
+/* Utility */
+.text-brand { color: var(--brand); }
 
 /* ===========================
    NAV
@@ -504,14 +507,14 @@ button {
 }
 
 .challenge__card-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: var(--radius-sm);
+  width: 100%;
+  height: 120px;
+  border-radius: var(--radius);
   background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--ink);
   margin-bottom: 1.25rem;
 }
@@ -594,6 +597,19 @@ button {
 .safety__ipad img {
   width: 100%;
   height: auto;
+}
+
+.safety__simple-copy h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.safety__simple-copy h3 strong {
+  font-weight: 700;
 }
 
 .safety__simple-copy p {
@@ -778,10 +794,38 @@ button {
   padding: var(--section-py) 0;
 }
 
+.feedback__intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.feedback__check-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: var(--brand);
+}
+
+.feedback__intro p {
+  font-size: var(--text-body);
+  color: var(--muted);
+  line-height: 1.5;
+  max-width: 480px;
+}
+
 .feedback__dashboard {
   background: linear-gradient(180deg, var(--paper) 0%, var(--white) 100%);
   padding: 3rem 0;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .feedback__dashboard img {
@@ -792,30 +836,6 @@ button {
   display: block;
   border-radius: var(--radius);
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
-}
-
-.feedback__surveys {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .feedback__surveys {
-    grid-template-columns: 1fr 1.2fr;
-    gap: 3rem;
-  }
-}
-
-.feedback__surveys-copy h2 {
-  margin-bottom: 0.75rem;
-}
-
-.feedback__surveys-copy p {
-  font-size: var(--text-body);
-  color: var(--muted);
-  line-height: 1.5;
 }
 
 .feedback__surveys-images {
@@ -997,14 +1017,14 @@ button {
 }
 
 .compliance__card-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: var(--radius-sm);
+  width: 100%;
+  height: 120px;
+  border-radius: var(--radius);
   background: var(--paper);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--ink);
   margin-bottom: 1.25rem;
 }
@@ -1120,6 +1140,7 @@ button {
   position: relative;
 }
 
+/* Vertical dotted line connecting steps */
 .pricing__steps::before {
   content: '';
   position: absolute;
@@ -1132,13 +1153,10 @@ button {
 
 @media (min-width: 768px) {
   .pricing__steps::before {
-    display: none;
-  }
-
-  .pricing__steps {
-    flex-direction: row;
-    max-width: 100%;
-    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 28px;
+    bottom: 28px;
   }
 }
 
@@ -1152,10 +1170,29 @@ button {
 
 @media (min-width: 768px) {
   .pricing__step {
-    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
     align-items: center;
-    text-align: center;
-    max-width: 280px;
+    gap: 2rem;
+  }
+
+  /* Steps 1 & 3: icon on right, text on left (right-aligned text) */
+  .pricing__step:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .pricing__step:nth-child(odd) .pricing__step-content {
+    text-align: right;
+  }
+
+  /* Step 2: icon on left, text on right (left-aligned text) */
+  .pricing__step:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .pricing__step:nth-child(even) .pricing__step-content {
+    text-align: left;
   }
 }
 
@@ -1292,17 +1329,17 @@ button {
 }
 
 .demo-mission__grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 3rem;
   margin-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
-  .demo-mission__grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
+.demo-mission__book {
+  text-align: center;
+  max-width: 440px;
+  width: 100%;
 }
 
 .demo-mission__book .section-title {
@@ -1314,6 +1351,18 @@ button {
   color: var(--muted);
   margin-bottom: 2rem;
   line-height: 1.5;
+}
+
+.demo-mission__separator {
+  border: none;
+  border-top: 2px dashed var(--border-light);
+  width: 100%;
+  max-width: 580px;
+}
+
+.demo-mission__mission {
+  text-align: center;
+  max-width: 580px;
 }
 
 /* Scheduling widget */
