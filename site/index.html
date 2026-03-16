@@ -64,16 +64,28 @@
   <section class="customers">
     <div class="customers__inner">
       <p class="customers__label">Trusted by homes across Australia and the UK</p>
-      <div class="customers__grid">
-        <img src="assets/Customer Tile Bentley.png" alt="Bentley Wood" width="97" height="70" loading="lazy">
-        <img src="assets/Customer Tile Southern Cross Care.png" alt="Southern Cross Care" width="97" height="70" loading="lazy">
-        <img src="assets/Customer Tile Mathew Finders.png" alt="Mathew Flinders" width="97" height="70" loading="lazy">
-        <img src="assets/Customer Tile Manor Court.png" alt="Manor Court" width="97" height="70" loading="lazy">
-        <img src="assets/Customer Tile Vermont.png" alt="Vermont" width="97" height="70" loading="lazy">
-        <img src="assets/Customer Jimbelunga.png" alt="Jimbelunga" width="97" height="70" loading="lazy">
-        <img src="assets/Customer Mercy Health.png" alt="Mercy Health" width="97" height="70" loading="lazy">
-        <img src="assets/Customer Quambie Park.png" alt="Quambie Park" width="97" height="70" loading="lazy">
-        <img src="assets/Customer Indigo North Health.png" alt="Indigo North Health" width="97" height="70" loading="lazy">
+      <div class="customers__marquee">
+        <div class="customers__track">
+          <img src="assets/Customer Tile Bentley.png" alt="Bentley Wood" loading="lazy">
+          <img src="assets/Customer Tile Southern Cross Care.png" alt="Southern Cross Care" loading="lazy">
+          <img src="assets/Customer Tile Mathew Finders.png" alt="Mathew Flinders" loading="lazy">
+          <img src="assets/Customer Tile Manor Court.png" alt="Manor Court" loading="lazy">
+          <img src="assets/Customer Tile Vermont.png" alt="Vermont" loading="lazy">
+          <img src="assets/Customer Jimbelunga.png" alt="Jimbelunga" loading="lazy">
+          <img src="assets/Customer Mercy Health.png" alt="Mercy Health" loading="lazy">
+          <img src="assets/Customer Quambie Park.png" alt="Quambie Park" loading="lazy">
+          <img src="assets/Customer Indigo North Health.png" alt="Indigo North Health" loading="lazy">
+          <!-- Duplicate for seamless loop -->
+          <img src="assets/Customer Tile Bentley.png" alt="Bentley Wood" loading="lazy" aria-hidden="true">
+          <img src="assets/Customer Tile Southern Cross Care.png" alt="Southern Cross Care" loading="lazy" aria-hidden="true">
+          <img src="assets/Customer Tile Mathew Finders.png" alt="Mathew Flinders" loading="lazy" aria-hidden="true">
+          <img src="assets/Customer Tile Manor Court.png" alt="Manor Court" loading="lazy" aria-hidden="true">
+          <img src="assets/Customer Tile Vermont.png" alt="Vermont" loading="lazy" aria-hidden="true">
+          <img src="assets/Customer Jimbelunga.png" alt="Jimbelunga" loading="lazy" aria-hidden="true">
+          <img src="assets/Customer Mercy Health.png" alt="Mercy Health" loading="lazy" aria-hidden="true">
+          <img src="assets/Customer Quambie Park.png" alt="Quambie Park" loading="lazy" aria-hidden="true">
+          <img src="assets/Customer Indigo North Health.png" alt="Indigo North Health" loading="lazy" aria-hidden="true">
+        </div>
       </div>
     </div>
   </section>
@@ -260,7 +272,7 @@
   <section class="feedback">
     <div class="container">
       <div class="feedback__intro reveal">
-        <span class="feedback__check-icon"><i class="hgi-stroke hgi-checkmark-circle-02"></i></span>
+        <span class="feedback__check-icon"><i class="hgi-stroke hgi-message-01"></i></span>
         <h3 class="feedback__title">Capture resident feedback</h3>
         <p>Collect feedback on meals and dining experience to drive continuous improvement.</p>
       </div>
@@ -279,7 +291,7 @@
 
   <!-- Personalised Experience -->
   <section class="personalised">
-    <div class="container">
+    <div class="container container--narrow">
       <header class="personalised__header reveal">
         <span class="kicker">Personalised Experience</span>
         <h2 class="section-title">Every resident, known as who they are today.</h2>
@@ -468,9 +480,9 @@
           <span class="pricing__label">Team Plan</span>
           <div class="pricing__price">
             <span class="pricing__amount">$7</span>
-            <span class="pricing__unit">per bed per month</span>
+            <span class="pricing__unit">per bed<br>per month</span>
           </div>
-          <p class="pricing__setup">$5,000 one-time setup fee (implementation + onsite training). $4,000 for each additional facility.</p>
+          <p class="pricing__setup"><strong>$5,000</strong> one-time setup fee (implementation + onsite training).<br><strong>$4,000</strong> for each additional facility.</p>
 
           <ul class="pricing__features">
             <li>Unlimited meals</li>
@@ -481,15 +493,13 @@
             <li>24/7 Email support</li>
           </ul>
 
-          <p class="pricing__note">Hardware devices cost not included. All prices in <strong>Australian Dollars</strong> and <strong>exclude GST</strong>.</p>
+          <p class="pricing__note">Hardware devices cost not included.<br>All prices in <strong>Australian Dollars</strong> and <strong>exclude GST</strong>.</p>
 
           <a href="#book-demo" class="btn btn--primary btn--lg pricing__cta">Get started</a>
         </div>
       </div>
     </div>
   </section>
-
-  <hr class="section-hr">
 
   <!-- Book Demo + Mission -->
   <section class="demo-mission" id="book-demo">
