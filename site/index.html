@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, nofollow">
   <title>Embrayse — Aged Care Food Services Software</title>
   <meta name="description" content="Aged care food services, run with confidence. Built specifically for residential aged care — safety, compliance, and simplicity in one platform.">
 
@@ -53,7 +53,7 @@
     <div class="hero__content">
       <h1 class="hero__title">Aged care food services, run with confidence.</h1>
       <p class="hero__subtitle">Built specifically for aged care — from kitchen to clinical care. Other tools digitise the complexity. Embrayse removes it.</p>
-      <a href="#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+      <div class="glow-wrap glow-wrap--btn"><a href="#book-demo" class="btn btn--primary btn--lg">Book your demo</a></div>
     </div>
     <div class="hero__screen">
       <img src="assets/Hero-Screen.png" alt="Embrayse orders dashboard showing resident meal orders with dietary alerts" width="817" height="461" loading="eager">
@@ -128,13 +128,13 @@
       </div>
 
       <!-- Testimonial -->
-      <blockquote class="challenge__quote reveal">
+      <div class="glow-wrap glow-wrap--card"><blockquote class="challenge__quote reveal">
         <p>"After 32 years in Aged Care, never would I think that a software product would streamline the dining experience like this. I am so glad we went with Embrayse."</p>
         <footer>
           <strong>Sharen</strong>
           <span>Environmental Services Manager, Jimbelunga</span>
         </footer>
-      </blockquote>
+      </blockquote></div>
 
       <!-- Value cards -->
       <div class="challenge__cards reveal">
@@ -222,7 +222,7 @@
   </section>
 
   <!-- Hero Image — TV in Dining Room -->
-  <div class="hero-image">
+  <div class="hero-image reveal">
     <img src="assets/Section-HeroImage-TVDiningRoom.jpg" alt="TV displaying the Embrayse menu in an aged care dining room" width="1440" height="617" loading="lazy">
   </div>
 
@@ -276,15 +276,15 @@
         <h3 class="feedback__title">Capture resident feedback</h3>
         <p>Collect feedback on meals and dining experience to drive continuous improvement.</p>
       </div>
-      <div class="feedback__surveys-images reveal">
-        <img src="assets/Feedback - Survey Left.png" alt="Service check-in survey" class="feedback__survey feedback__survey--left" width="220" height="320" loading="lazy">
-        <img src="assets/Feedback - Survey Centre.png" alt="Service check-in survey detail" class="feedback__survey feedback__survey--center" width="240" height="340" loading="lazy">
-        <img src="assets/Feedback - Survey Right.png" alt="Service check-in results" class="feedback__survey feedback__survey--right" width="220" height="320" loading="lazy">
-      </div>
-    </div>
-    <div class="feedback__dashboard reveal">
-      <div class="container">
-        <img src="assets/Feedback Dashboard.png" alt="Embrayse insights dashboard showing resident feedback metrics" width="817" height="565" loading="lazy">
+      <div class="feedback__visual reveal">
+        <div class="feedback__surveys-images">
+          <img src="assets/Feedback - Survey Left.png" alt="Service check-in survey" class="feedback__survey feedback__survey--left" width="220" height="320" loading="lazy">
+          <img src="assets/Feedback - Survey Centre.png" alt="Service check-in survey detail" class="feedback__survey feedback__survey--center" width="240" height="340" loading="lazy">
+          <img src="assets/Feedback - Survey Right.png" alt="Service check-in results" class="feedback__survey feedback__survey--right" width="220" height="320" loading="lazy">
+        </div>
+        <div class="feedback__dashboard">
+          <img src="assets/Feedback Dashboard.png" alt="Embrayse insights dashboard showing resident feedback metrics" width="817" height="565" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
@@ -354,14 +354,14 @@
 
       <div class="compliance__logos reveal">
         <div class="compliance__logo-grid">
-          <img src="assets/integrations Telstra Health.png" alt="Telstra Health" width="160" height="80" loading="lazy">
-          <img src="assets/integrations Autumn Care.png" alt="AutumnCare" width="160" height="80" loading="lazy">
-          <img src="assets/integrations Care Lynx.png" alt="CareLynx" width="160" height="80" loading="lazy">
-          <img src="assets/integrations manad plus.png" alt="ManadPlus" width="160" height="80" loading="lazy">
-          <img src="assets/integrations Person Centred Software.png" alt="Person Centred Software" width="160" height="80" loading="lazy">
-          <img src="assets/integrations Leecare.png" alt="Leecare" width="160" height="80" loading="lazy">
-          <img src="assets/integrations Safe food pro.png" alt="Safe Food Pro" width="160" height="80" loading="lazy">
-          <img src="assets/integration Smith Kit.png" alt="Smithkit" width="160" height="80" loading="lazy">
+          <img src="assets/integrations Telstra Health.png" alt="Telstra Health" width="160" height="80" loading="lazy" class="reveal" style="transition-delay: 0s">
+          <img src="assets/integrations Autumn Care.png" alt="AutumnCare" width="160" height="80" loading="lazy" class="reveal" style="transition-delay: 0.15s">
+          <img src="assets/integrations Care Lynx.png" alt="CareLynx" width="160" height="80" loading="lazy" class="reveal" style="transition-delay: 0.3s">
+          <img src="assets/integrations manad plus.png" alt="ManadPlus" width="160" height="80" loading="lazy" class="reveal" style="transition-delay: 0.45s">
+          <img src="assets/integrations Person Centred Software.png" alt="Person Centred Software" width="160" height="80" loading="lazy" class="reveal" style="transition-delay: 0.6s">
+          <img src="assets/integrations Leecare.png" alt="Leecare" width="160" height="80" loading="lazy" class="reveal" style="transition-delay: 0.75s">
+          <img src="assets/integrations Safe food pro.png" alt="Safe Food Pro" width="160" height="80" loading="lazy" class="reveal" style="transition-delay: 0.9s">
+          <img src="assets/integration Smith Kit.png" alt="Smithkit" width="160" height="80" loading="lazy" class="reveal" style="transition-delay: 1.05s">
         </div>
         <p class="compliance__more">and more...</p>
       </div>
@@ -387,7 +387,7 @@
   </section>
 
   <!-- Hero Image — Care Provider with Resident -->
-  <div class="hero-image">
+  <div class="hero-image reveal">
     <img src="assets/Section-HeroImage-People.jpg" alt="Care provider showing an aged care resident meal options on a tablet" width="1440" height="617" loading="lazy">
   </div>
 
@@ -446,22 +446,22 @@
         <h2 class="section-title">Up and running in 3 steps</h2>
       </header>
 
-      <div class="pricing__steps reveal">
-        <div class="pricing__step">
+      <div class="pricing__steps">
+        <div class="pricing__step reveal" style="transition-delay: 0s">
           <div class="pricing__step-icon"><i class="hgi-stroke hgi-calendar-03"></i></div>
           <div class="pricing__step-content">
             <h3>1. Book your demo</h3>
             <p>We'll learn about your needs and show you the product in action.</p>
           </div>
         </div>
-        <div class="pricing__step">
+        <div class="pricing__step reveal" style="transition-delay: 0.3s">
           <div class="pricing__step-icon"><i class="hgi-stroke hgi-wrench-01"></i></div>
           <div class="pricing__step-content">
             <h3>2. We get you set up</h3>
             <p>Implementation, data migration, and onsite training. We do the heavy lifting.</p>
           </div>
         </div>
-        <div class="pricing__step">
+        <div class="pricing__step reveal" style="transition-delay: 0.6s">
           <div class="pricing__step-icon"><i class="hgi-stroke hgi-rocket-02"></i></div>
           <div class="pricing__step-content">
             <h3>3. Run with confidence</h3>
@@ -476,7 +476,7 @@
           <p class="pricing__refund">No hidden costs, no lock-in contracts.<br><strong>60-day full refund policy</strong></p>
         </div>
 
-        <div class="pricing__card">
+        <div class="glow-wrap glow-wrap--card"><div class="pricing__card">
           <span class="pricing__label">Team Plan</span>
           <div class="pricing__price">
             <span class="pricing__amount">$7</span>
@@ -496,7 +496,7 @@
           <p class="pricing__note">Hardware devices cost not included.<br>All prices in <strong>Australian Dollars</strong> and <strong>exclude GST</strong>.</p>
 
           <a href="#book-demo" class="btn btn--primary btn--lg pricing__cta">Get started</a>
-        </div>
+        </div></div>
       </div>
     </div>
   </section>
@@ -565,7 +565,158 @@
     </div>
   </footer>
 
+  <!-- Dev Tools Panel -->
+  <div class="dev-panel" id="devPanel">
+    <div class="dev-panel__header">
+      <span class="dev-panel__title">Glow Dev Tools</span>
+      <button class="dev-panel__collapse" id="devCollapse">_</button>
+    </div>
+    <div class="dev-panel__body" id="devBody">
+
+      <!-- CTA Button Controls -->
+      <div class="dev-panel__section">
+        <span class="dev-panel__label">CTA Button <em>(brand)</em></span>
+        <label>Blur <span id="btnBlurVal">12</span>px
+          <input type="range" min="0" max="60" value="12" id="btnBlur">
+        </label>
+        <label>Spread <span id="btnSpreadVal">4</span>px
+          <input type="range" min="0" max="30" value="4" id="btnSpread">
+        </label>
+        <label>Opacity <span id="btnOpacityVal">1</span>
+          <input type="range" min="0" max="100" value="100" id="btnOpacity">
+        </label>
+        <label>Speed <span id="btnSpeedVal">4</span>s
+          <input type="range" min="1" max="12" value="4" id="btnSpeed">
+        </label>
+        <label>Angle <span id="btnAngleVal">135</span>°
+          <input type="range" min="0" max="360" value="135" id="btnAngle">
+        </label>
+        <div class="dev-panel__row">
+          <label><input type="checkbox" id="btnOn" checked> Enabled</label>
+          <button class="dev-panel__copy" data-copy="btn">Copy</button>
+        </div>
+      </div>
+
+      <!-- Testimonial Controls -->
+      <div class="dev-panel__section">
+        <span class="dev-panel__label">Testimonial <em>(4-colour)</em></span>
+        <label>Blur <span id="quoteBlurVal">20</span>px
+          <input type="range" min="0" max="60" value="20" id="quoteBlur">
+        </label>
+        <label>Spread <span id="quoteSpreadVal">8</span>px
+          <input type="range" min="0" max="30" value="8" id="quoteSpread">
+        </label>
+        <label>Opacity <span id="quoteOpacityVal">1</span>
+          <input type="range" min="0" max="100" value="100" id="quoteOpacity">
+        </label>
+        <label>Speed <span id="quoteSpeedVal">6</span>s
+          <input type="range" min="1" max="12" value="6" id="quoteSpeed">
+        </label>
+        <label>Angle <span id="quoteAngleVal">135</span>°
+          <input type="range" min="0" max="360" value="135" id="quoteAngle">
+        </label>
+        <div class="dev-panel__row">
+          <label><input type="checkbox" id="quoteOn" checked> Enabled</label>
+          <button class="dev-panel__copy" data-copy="quote">Copy</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="script.js"></script>
+  <script>
+  (() => {
+    const btnWrap = document.querySelector('.glow-wrap--btn');
+    const quoteWrap = document.querySelector('.challenge__quote').closest('.glow-wrap');
+    const btnPseudo = btnWrap;
+    const quotePseudo = quoteWrap;
+
+    // Apply styles to ::before via CSS custom properties
+    function applyBtn() {
+      const on = document.getElementById('btnOn').checked;
+      const blur = document.getElementById('btnBlur').value;
+      const spread = document.getElementById('btnSpread').value;
+      const opacity = document.getElementById('btnOpacity').value / 100;
+      const speed = document.getElementById('btnSpeed').value;
+      const angle = document.getElementById('btnAngle').value;
+
+      document.getElementById('btnBlurVal').textContent = blur;
+      document.getElementById('btnSpreadVal').textContent = spread;
+      document.getElementById('btnOpacityVal').textContent = opacity.toFixed(2);
+      document.getElementById('btnSpeedVal').textContent = speed;
+      document.getElementById('btnAngleVal').textContent = angle;
+
+      btnWrap.style.setProperty('--glow-blur', blur + 'px');
+      btnWrap.style.setProperty('--glow-spread', '-' + spread + 'px');
+      btnWrap.style.setProperty('--glow-opacity', on ? opacity : 0);
+      btnWrap.style.setProperty('--glow-speed', speed + 's');
+      btnWrap.style.setProperty('--glow-angle', angle + 'deg');
+    }
+
+    function applyQuote() {
+      const on = document.getElementById('quoteOn').checked;
+      const blur = document.getElementById('quoteBlur').value;
+      const spread = document.getElementById('quoteSpread').value;
+      const opacity = document.getElementById('quoteOpacity').value / 100;
+      const speed = document.getElementById('quoteSpeed').value;
+      const angle = document.getElementById('quoteAngle').value;
+
+      document.getElementById('quoteBlurVal').textContent = blur;
+      document.getElementById('quoteSpreadVal').textContent = spread;
+      document.getElementById('quoteOpacityVal').textContent = opacity.toFixed(2);
+      document.getElementById('quoteSpeedVal').textContent = speed;
+      document.getElementById('quoteAngleVal').textContent = angle;
+
+      quoteWrap.style.setProperty('--glow-blur', blur + 'px');
+      quoteWrap.style.setProperty('--glow-spread', '-' + spread + 'px');
+      quoteWrap.style.setProperty('--glow-opacity', on ? opacity : 0);
+      quoteWrap.style.setProperty('--glow-speed', speed + 's');
+      quoteWrap.style.setProperty('--glow-angle', angle + 'deg');
+    }
+
+    // Bind sliders
+    ['btnBlur','btnSpread','btnOpacity','btnSpeed','btnAngle','btnOn'].forEach(id => {
+      document.getElementById(id).addEventListener('input', applyBtn);
+    });
+    ['quoteBlur','quoteSpread','quoteOpacity','quoteSpeed','quoteAngle','quoteOn'].forEach(id => {
+      document.getElementById(id).addEventListener('input', applyQuote);
+    });
+
+    // Copy buttons
+    document.querySelectorAll('[data-copy]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const t = btn.dataset.copy;
+        const vals = t === 'btn' ? {
+          type: 'brand',
+          blur: document.getElementById('btnBlur').value,
+          spread: document.getElementById('btnSpread').value,
+          opacity: (document.getElementById('btnOpacity').value / 100).toFixed(2),
+          speed: document.getElementById('btnSpeed').value,
+          angle: document.getElementById('btnAngle').value,
+        } : {
+          type: '4-colour',
+          blur: document.getElementById('quoteBlur').value,
+          spread: document.getElementById('quoteSpread').value,
+          opacity: (document.getElementById('quoteOpacity').value / 100).toFixed(2),
+          speed: document.getElementById('quoteSpeed').value,
+          angle: document.getElementById('quoteAngle').value,
+        };
+        const text = `Glow settings (${vals.type}): blur=${vals.blur}px, spread=${vals.spread}px, opacity=${vals.opacity}, speed=${vals.speed}s, angle=${vals.angle}deg`;
+        navigator.clipboard.writeText(text);
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy', 1500);
+      });
+    });
+
+    // Collapse toggle
+    document.getElementById('devCollapse').addEventListener('click', () => {
+      document.getElementById('devBody').classList.toggle('is-collapsed');
+    });
+
+    // No auto-apply on init — CSS defaults are the baked-in values
+  })();
+  </script>
 </body>
 </html>

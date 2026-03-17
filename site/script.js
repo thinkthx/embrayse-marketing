@@ -102,4 +102,18 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  /* Genie animation for feedback survey cards */
+  const surveys = document.querySelector('.feedback__surveys-images');
+  if (surveys) {
+    const genieObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setTimeout(() => surveys.classList.add('is-animating'), 1200);
+          genieObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.9 });
+    genieObserver.observe(surveys);
+  }
 }
