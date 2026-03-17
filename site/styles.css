@@ -1630,7 +1630,7 @@ button {
 
 .demo-mission {
   padding-top: var(--section-py);
-  background: linear-gradient(180deg, var(--paper) 0%, var(--white) 100%);
+  background: linear-gradient(180deg, var(--paper) 0%, var(--white) 40%);
   border-top: 1px solid #ddd;
 }
 
