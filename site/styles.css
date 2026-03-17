@@ -465,6 +465,7 @@ button {
   height: auto;
   border-radius: var(--radius);
   object-fit: cover;
+  border: 1px solid #ddd;
 }
 
 .challenge__list {
