@@ -55,7 +55,7 @@ button {
   --font-quote: 'PT Serif', serif;
 
   /* Font scale */
-  --text-hero: clamp(2.5rem, 5vw, 4.5rem);
+  --text-h1: clamp(2.5rem, 4vw, 4.5rem);
   --text-h2: clamp(2rem, 3.5vw, 3.25rem);
   --text-h3: clamp(1.5rem, 2.5vw, 2.5rem);
   --text-body-lg: clamp(1.125rem, 1.5vw, 1.375rem);
@@ -306,18 +306,18 @@ button {
 }
 
 .hero__content {
-  max-width: 656px;
+  max-width: 900px;
   margin-inline: auto;
   padding-inline: var(--content-px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
+  gap: 2rem;
 }
 
 .hero__title {
   font-family: var(--font-heading);
-  font-size: var(--text-h2);
+  font-size: var(--text-h1);
   font-weight: 600;
   line-height: 1;
   color: var(--ink);
@@ -327,7 +327,7 @@ button {
   font-size: var(--text-body);
   color: var(--muted);
   line-height: 1.5;
-  max-width: 580px;
+  max-width: 620px;
 }
 
 .hero__screen {
@@ -512,7 +512,7 @@ button {
   margin-top: 5rem;
   margin-bottom: 5rem;
   text-align: center;
-  box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 12px 32px -8px rgba(0, 0, 0, 0.12);
 }
 
 .challenge__quote p {
@@ -1322,7 +1322,7 @@ button {
   background: var(--white);
   border: 1px solid var(--border-light);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
@@ -1938,6 +1938,17 @@ button {
 .pricing__plan .glow-wrap--card {
   max-width: 520px;
   margin-inline: auto;
+}
+
+/* Brand — single-colour red glow (matches hero CTA) */
+.glow-wrap--brand {
+  --glow-bg: linear-gradient(180deg, var(--brand), var(--brand-deep), var(--brand), var(--brand-deep));
+  --glow-bg-size: 300% 300%;
+  --glow-blur: 22px;
+  --glow-spread: -22px;
+  --glow-opacity: 0.45;
+  --glow-speed: 8s;
+  border-radius: var(--radius);
 }
 
 @keyframes glow-shift {
