@@ -11,8 +11,11 @@ Legacy versions (v1, v2, etc.) remain in the root directory but are **not the ac
 ## Running locally
 
 ```bash
+# Live reload (preferred — auto-refreshes on file save):
+npx live-server site/
+
+# Or simple static server:
 cd site && python3 -m http.server 8080
-# then open http://localhost:8080
 ```
 
 ## Figma → Code → Playwright workflow
@@ -68,8 +71,8 @@ Legacy files (root): `index.html`, `index-v2.html`, `styles.css`, `styles-v2.css
 --font-quote: 'PT Serif', serif;      /* testimonial quotes */
 
 /* Font scale */
---text-hero: 72px;      /* Pridi Bold */
---text-h2: 52px;        /* Pridi SemiBold, line-height 48px */
+--text-h1: 72px max;    /* Pridi 600, clamp caps at 1180px viewport — hero only */
+--text-h2: 52px max;    /* Pridi SemiBold, line-height 48px */
 --text-h3: 40px;        /* Pridi SemiBold, line-height 44px */
 --text-body-lg: 22px;   /* Inter, line-height 28px */
 --text-body: 17px;      /* Inter */
@@ -143,6 +146,10 @@ Anchors: `#benefits`, `#success-stories`, `#pricing`, `#book-demo`
 - **Horizontal scroll carousel** (Op. Intelligence): CSS `scroll-snap`, 4 product screenshot cards.
 - **Scroll-reveal**: IntersectionObserver, `opacity: 0 → 1` + slight `translateY`. Respects `prefers-reduced-motion`.
 - **Scheduling widget** (Book Demo): Static UI for now (date, timezone, time, notes + CTA). Backend wired later.
+- **Glow system** (CSS): Three variants of animated box glow via `.glow-wrap`:
+  - `--btn`: brand-red gradient, used on hero CTA button
+  - `--card`: multicolour gradient (pink/yellow/blue/purple), used on pricing card
+  - `--brand`: brand-red gradient (same as btn), available for cards/blocks. Currently unused after testimonial was switched to a static soft shadow.
 
 ## Responsive strategy
 
@@ -159,7 +166,9 @@ Anchors: `#benefits`, `#success-stories`, `#pricing`, `#book-demo`
 
 **Core differentiator:** Embrayse *removes* complexity rather than digitising it.
 
-**Key buying trigger:** The revised Australian Aged Care Quality Standards (Standard 6: Food and Nutrition).
+**Key buying trigger:** The Strengthened Australian Aged Care Quality Standards (Standard 6: Food and Nutrition).
+
+**Key competitor:** Simple Foods. The H1 "Aged care catering made simple. And smart." is a deliberate positioning against them. Many customers have migrated from Simple Foods to Embrayse. Don't weaken or rewrite the hero heading without discussing with the team.
 
 ## SEO keywords
 
