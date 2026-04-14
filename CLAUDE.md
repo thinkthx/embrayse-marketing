@@ -39,21 +39,37 @@ site/
 ├── styles.css          # All styles (mobile-first)
 ├── script.js           # Nav toggle, scroll reveal, accordions, carousel
 ├── BUILD-PLAN.md       # Detailed section-by-section build plan
-└── assets/             # All pre-exported from Figma (flat directory)
-    ├── embrayse-logo-black.png
-    ├── Hero-Screen.png, screen 1 - orders.png, Menu iPad.png
-    ├── Section-HeroImage-TVDiningRoom.jpg, Section-HeroImage-People.jpg
-    ├── Mission brisbane-bg 1.jpg, paper-sheet-redacted.jpg
-    ├── Customer Tile *.png, Customer *.png (logos)
-    ├── integrations *.png (partner logos)
-    ├── Profile *.png (testimonial photos)
-    ├── Feedback *.png (dashboard + surveys)
-    ├── eMealsPhone *.png (mobile app mockups)
-    ├── MenuPlanner Image.png
-    └── Operational Intelligence - *.png (carousel screenshots)
+├── assets/             # All pre-exported from Figma (flat directory)
+│   ├── embrayse-logo-black.png
+│   ├── Hero-Screen.png, screen 1 - orders.png, Menu iPad.png
+│   ├── Section-HeroImage-TVDiningRoom.jpg, Section-HeroImage-People.jpg
+│   ├── Mission brisbane-bg 1.jpg, paper-sheet-redacted.jpg
+│   ├── Customer Tile *.png, Customer *.png (logos)
+│   ├── integrations *.png (partner logos)
+│   ├── Profile *.png (testimonial photos)
+│   ├── Feedback *.png (dashboard + surveys)
+│   ├── eMealsPhone *.png (mobile app mockups)
+│   ├── MenuPlanner Image.png
+│   └── Operational Intelligence - *.png (carousel screenshots)
+└── release-notes/      # Product release notes (index + per-release pages)
+    ├── index.html                      # Listing of all releases, grouped by year
+    ├── release-notes.css               # Release-notes-specific styles
+    ├── {version-slug}.html             # e.g. 2026-3.html — one per release
+    └── assets/{version-slug}/          # Screenshots scoped per release
 ```
 
 Legacy files (root): `index.html`, `index-v2.html`, `styles.css`, `styles-v2.css`, `script.js`, and `marketing/` assets folder.
+
+## Release notes
+
+Product release notes live under `site/release-notes/`. URL pattern when served:
+
+- `/release-notes/` — listing page (all releases grouped by year, newest first)
+- `/release-notes/{version-slug}` — individual release (e.g. `/release-notes/2026-3`)
+
+Each release page loads the shared `../styles.css` plus `release-notes.css` so it inherits all design tokens and matches the marketing site style. Release pages use a **minimal nav** (logo + Home + All Releases) rather than the full marketing nav, and end with a "Book your demo" CTA.
+
+**Creating a new release:** Use the `/create-release-note` slash command. It accepts a version, title, feature bullets (with `[screenshot: filename]` markers), and a fixes list, then generates the HTML page, copies screenshots into the right folder, and updates the index. See `.claude/commands/create-release-note.md` for input format.
 
 ## Figma source
 

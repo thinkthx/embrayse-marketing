@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2021.6 | Embrayse</title>
+  <meta name="description" content="Release 2021.6 adds Person Centred Software (PCS) integration and lets you print a specific range of dockets from the prep report.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2021.6 – PCS integration and printing docket subsets">
+  <meta property="og:description" content="Person Centred Software integration and the ability to print a specific subset of dockets.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2021-6">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="/" class="rn-nav__link">Home</a>
+        <a href="./" class="rn-nav__link">All Releases</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2021.6 &ndash; PCS integration and printing docket subsets</h1>
+        <p class="rn-detail__intro">This release introduces our integration with Person Centred Software, one of the leading clinical systems for aged care, and adds finer control over which dockets get printed.</p>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Person Centred Software (PCS) Integration</h2>
+        <p>One of our most requested features has been the ability to integrate with PCS, a leading clinical systems for aged care. Well, it's now here! Once you have set up the integration, resident names and rooms will automatically be synchronised from PCS, they'll be marked as away when their file is suspended in PCS, and automatically archived once their file is closed. The synchronisation occurs every 15 minutes. To set up integration PCS, please work with your Embrayse support contact. Note that any resident fields that are linked to PCS will no longer be editable in Embrayse. These fields will be "locked" as shown below:</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2021-6/pcs-links.png" alt="Resident fields locked because they are synchronised from PCS" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Print a subset of dockets</h2>
+        <p>You can already filter the prep report before printing dockets. But now you can go even further and select the specific range of dockets you want to print. Simply select the From and To fields on the print dialog box. This is especially useful if you want to print a single docket, or if you have to resume a print job after needing to replace the printer paper roll.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2021-6/print-range.gif" alt="Selecting a From and To range on the docket print dialog" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>On the room selector on resident order page, you can now see the wing name as well as the room number.</li>
+          <li>Fixed: sometimes dockets don't print correctly when printing many in one go (due to a timeout).</li>
+          <li>Fixed: keyboard focus is sometimes lost when editing residents or dishes.</li>
+          <li>Fixed: the notification dropdown sometimes does not show when there are many notifications.</li>
+          <li>Updated the website icon that appears on the browser tab bar.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

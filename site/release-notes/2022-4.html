@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2022.4 | Embrayse</title>
+  <meta name="description" content="Release 2022.4 introduces the Service Check-in survey for fast resident feedback, plus enhancements to regular order items.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2022.4 | Service check-in">
+  <meta property="og:description" content="Release 2022.4 introduces the Service Check-in survey for fast resident feedback, plus enhancements to regular order items.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2022-4">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="/" class="rn-nav__link">Home</a>
+        <a href="./" class="rn-nav__link">All Releases</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2022.4 &ndash; Service check-in</h1>
+        <p class="rn-detail__intro">It was clear that whatever feedback method we introduce in Embrayse must be quick and easy while giving you enough information to know where to focus your efforts. Otherwise, staff are discouraged from collecting feedback frequently. That's why the Service Check-in survey is designed to be fast, allowing you to capture residents' sentiments about the variety and taste of food, staff service, and the overall experience.</p>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Service Check-in</h2>
+        <p>As more and more submissions are collected, you can view an aggregate of the residents' feedback, as well as the individual submissions, in the new Insights area.</p>
+
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2022-4/service-checkin.gif" alt="Completing a Service Check-in survey for a resident" loading="lazy">
+        </figure>
+
+        <p>If you want to take the extra step and ensure that all residents are checked-in with on a regular basis, you can set how often reminders are displayed to staff under Settings.</p>
+
+        <div class="rn-feature__screenshots rn-feature__screenshots--two">
+          <img src="assets/2022-4/insights.png" alt="Aggregated check-in feedback on the Insights screen" loading="lazy">
+          <img src="assets/2022-4/checkin-settings.png" alt="Configuring check-in reminder frequency in Settings" loading="lazy">
+        </div>
+
+        <p>When a resident is due for a check-in, a badge is displayed next to their name on the resident list.</p>
+
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2022-4/checkin-prompt.png" alt="Check-in due badge next to a resident's name" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Regular Order Item Enhancements</h2>
+        <p>Regular order items have been a unique and powerful feature in Embrayse, and we have now taken it one step further, by giving you the flexibility to select which days of the week the item should be automatically ordered on.</p>
+
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2022-4/regular-item-days.png" alt="Selecting days of the week for a regular order item" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>[Released previously] Resident Intolerances &amp; Dislikes field is now just Intolerances. Dislikes should be moved to Notes.</li>
+          <li>[Released previously] Resident Notes are now printed on their dockets.</li>
+          <li>Fixed: when a regular order item is updated, sometimes future "skipped" dates are lost.</li>
+          <li>Fixed: orders for people with Away status do not appear on backup PDFs.</li>
+          <li>Fixed: if a server error occurs when saving a resident or meal, the save button becomes disabled completely and a page refresh is required to try again.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

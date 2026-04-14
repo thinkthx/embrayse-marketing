@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2025.3 | Embrayse</title>
+  <meta name="description" content="Release 2025.3 ships platform-wide accessibility improvements, Prep Report expand/collapse all, and a new update banner.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2025.3 | Accessibility and Quality of Life Improvements">
+  <meta property="og:description" content="Platform-wide accessibility improvements, Prep Report expand/collapse all, and an update banner.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2025-3">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="/" class="rn-nav__link">Home</a>
+        <a href="./" class="rn-nav__link">All Releases</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2025.3 &ndash; Accessibility and Quality of Life Improvements</h1>
+        <p class="rn-detail__intro">Over the past few months, we have continually made improvements to Embrayse, culminating in our most recent accessibility improvements release. Here is a recap of all the changes.</p>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Accessibility Improvements</h2>
+        <p>As part of our ongoing commitment to equal access to our software, we have shipped platform-wide accessibility improvements, bringing Embrayse largely in line with Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. Highlights include better colour contrast for all text and icons, screen reader labels for all interactive elements, and improved keyboard focus for all interactive elements.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2025-3/accessibility.gif" alt="Animated demo of accessibility improvements including keyboard focus and screen reader labels" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Prep Report Expand/Collapse All</h2>
+        <p>You can now quickly expand all orders on the prep report, making navigation of the list quicker.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2025-3/expand-all.gif" alt="Animated demo of expanding and collapsing all orders on the Prep Report" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Update Banner</h2>
+        <p>We'll now give you a heads-up when a new version of Embrayse is available. If your browser tab has been open for a while, you'll see a banner at the top. Refresh to load the latest features and fixes.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2025-3/update-banner.png" alt="Banner notifying the user that a new version of Embrayse is available" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>When copying a menu, you can now optionally disable copying of the menu title. This is useful, for example, when you want to copy the same breakfast items across many weeks, but want to leave the target menu titles unchanged.</li>
+          <li>The "You have no permissions" page now displays the name and email of the logged-in user, and gives you the option to log out.</li>
+          <li>The notifications dropdown list now always shows the latest changes at the top, regardless of whether they've been read or not.</li>
+          <li>Improved the loading performance of the Plan &gt; All Items screen.</li>
+          <li>Improved logging for the customer facing APIs.</li>
+          <li>The Menu Copy window now picks a better default starting and ending week when using the Repeat function.</li>
+          <li>Fixed: Meal notes larger than 200 characters caused an error. The textbox is now limited to 200 characters.</li>
+          <li>Fixed: On the Plan page, the Clear button and Title were enabled for closed weeks. These have now been disabled.</li>
+          <li>Fixed: The Settings &gt; Users page did not correctly handle more than 100 users in the organisation.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
