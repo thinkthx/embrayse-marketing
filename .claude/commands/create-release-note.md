@@ -114,8 +114,8 @@ Create `site/release-notes/{version-slug}.html` using this exact template. Repla
         <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
       </a>
       <nav class="rn-nav__links">
-        <a href="/" class="rn-nav__link">Home</a>
         <a href="./" class="rn-nav__link">All Releases</a>
+        <a href="https://help.embrayse.com/" class="rn-nav__link">Help</a>
       </nav>
     </div>
   </header>
