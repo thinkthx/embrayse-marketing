@@ -1,0 +1,438 @@
+/* =====================================================================
+   EMBRAYSE BRAND THEME FOR ZOHO BOOKINGS  (v3)
+   =====================================================================
+   Paste this into the Zoho Bookings admin panel under:
+     Appearance / Business Page Customization → Custom CSS
+
+   v3 changes:
+   - FIXED: Used wrong theme class in v1/v2 (themetwelve). The actual
+     theme is `zb-btone-themeeleven`. Every selector now uses the
+     correct theme prefix.
+   - Overrides the grid layout on .zb-btone-inner-content (grid + 40px
+     gap) so rows stack flush like the placeholder widget did.
+   - Resets row height (was 124px by default).
+   - Beats inline `style="background-color:#FFF;color:#A0A0A0;"` on
+     icon containers via !important.
+
+   v2 changes carried over:
+   - Strips per-row borders so rows render flush in a single card
+   - Replaces stray right-side dropdown icons with a subtle "+"
+   - Restores Book button height/visibility
+   ===================================================================== */
+
+
+/* ---- Brand tokens (inline so this file works standalone) ---- */
+
+:root {
+  --emb-brand: #CF4967;
+  --emb-brand-deep: #a6354f;
+  --emb-ink: #19161B;
+  --emb-muted: #5F5863;
+  --emb-paper: #F7F3F6;
+  --emb-white: #FFFFFF;
+  --emb-border: #E5E5E5;
+  --emb-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --emb-font-heading: 'Pridi', 'Georgia', serif;
+}
+
+
+/* ---- Google Fonts ---- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&display=swap');
+
+
+/* ---- Global typography & background ---- */
+
+body.ember-application,
+body.ember-application * {
+  font-family: var(--emb-font-body) !important;
+  color: var(--emb-ink);
+}
+
+body.ember-application {
+  background: var(--emb-white) !important;
+}
+
+
+/* ---- Outer card ---- */
+
+.zb-btone-themeeleven.template-one-container,
+.template-one-container.zb-btone-container {
+  background: var(--emb-white) !important;
+  background-image: none !important;
+  padding: 0 !important;
+}
+
+.zb-btone-themeeleven .book-container {
+  background: var(--emb-white) !important;
+  background-image: none !important;
+  border: 1px solid var(--emb-border) !important;
+  border-radius: 2rem !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.zb-btone-themeeleven .zb-btone-content,
+.zb-btone-themeeleven .zb-btone-inner-container {
+  background: var(--emb-white) !important;
+  background-image: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+
+/* ---- KEY FIX: rows parent is a CSS grid with 40px gap. Make it a flush flex column. ---- */
+
+.zb-btone-themeeleven .zb-btone-inner-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: var(--emb-white) !important;
+}
+
+
+/* ---- Title (Welcome!) and description ---- */
+
+.zb-btone-themeeleven .zb-btone-title {
+  font-family: var(--emb-font-heading) !important;
+  color: var(--emb-ink) !important;
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  line-height: 1.2 !important;
+  padding: 1.5rem 1.5rem 0.25rem !important;
+  margin: 0 !important;
+}
+
+.zb-btone-themeeleven .zb-btone-description {
+  color: var(--emb-muted) !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.5 !important;
+  padding: 0 1.5rem 1.25rem !important;
+  margin: 0 !important;
+  border-bottom: 1px solid var(--emb-border) !important;
+}
+
+
+/* ---- Row container reset (default theme makes each row 124px tall with top+bottom borders) ---- */
+
+.zb-btone-themeeleven .zb-btone-service,
+.zb-btone-themeeleven .zb-btone-staff,
+.zb-btone-themeeleven .zb-btone-date,
+.zb-btone-themeeleven #zb-btone-date,
+.zb-btone-themeeleven .zb-btone-timezone,
+.zb-btone-themeeleven #zb-btone-timezone,
+.zb-btone-themeeleven .zb-btone-time {
+  position: relative !important;
+  background: var(--emb-white) !important;
+  background-image: none !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: 1px solid var(--emb-border) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 1rem 1.25rem !important;
+  min-height: auto !important;
+  height: auto !important;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.zb-btone-themeeleven .zb-btone-service:hover,
+.zb-btone-themeeleven .zb-btone-date:hover,
+.zb-btone-themeeleven .zb-btone-timezone:hover,
+.zb-btone-themeeleven .zb-btone-time:hover {
+  background: var(--emb-paper) !important;
+}
+
+/* Inner full-height divs were forcing 90px height on inner content */
+.zb-btone-themeeleven .zb-btone-service .full-height,
+.zb-btone-themeeleven .zb-btone-staff .full-height,
+.zb-btone-themeeleven .zb-btone-date .full-height,
+.zb-btone-themeeleven .zb-btone-timezone .full-height,
+.zb-btone-themeeleven .zb-btone-time .full-height {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+/* Row inner flex */
+.zb-btone-themeeleven .zb-btone-service > .dis-flex,
+.zb-btone-themeeleven .zb-btone-staff > .dis-flex,
+.zb-btone-themeeleven .zb-btone-date > .dis-flex,
+.zb-btone-themeeleven .zb-btone-timezone > .dis-flex,
+.zb-btone-themeeleven .zb-btone-time > .dis-flex {
+  align-items: center !important;
+  gap: 0.75rem !important;
+  flex-wrap: nowrap !important;
+  height: auto !important;
+  min-height: auto !important;
+}
+
+
+/* ---- Service row: keep "Embrayse Demo (1 hr)" inline ---- */
+
+.zb-btone-themeeleven #zb-btone-service,
+.zb-btone-themeeleven .zb-btone-service .zb-btone-field-details {
+  display: inline-flex !important;
+  align-items: baseline !important;
+  gap: 0.4rem !important;
+  flex-wrap: wrap !important;
+  white-space: normal !important;
+}
+
+.zb-btone-themeeleven #zb-btone-service > div,
+.zb-btone-themeeleven #zb-btone-service span {
+  display: inline !important;
+  white-space: nowrap !important;
+}
+
+
+/* ---- Icons on the left (overrides inline style="background-color:#FFF;color:#A0A0A0;") ---- */
+
+.zb-btone-themeeleven .zb-btone-field-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--emb-muted) !important;
+  font-size: 1.125rem !important;
+  width: 1.5rem !important;
+  min-width: 1.5rem !important;
+  flex: 0 0 auto !important;
+  border: none !important;
+}
+
+.zb-btone-themeeleven .zb-btone-field-icon .zb,
+.zb-btone-themeeleven .zb-btone-field-icon svg,
+.zb-btone-themeeleven .zb-btone-field-icon use,
+.zb-btone-themeeleven .zb-btone-field-icon * {
+  color: var(--emb-muted) !important;
+  fill: var(--emb-muted) !important;
+}
+
+
+/* ---- Field text ---- */
+
+.zb-btone-themeeleven .zb-btone-field-details {
+  color: var(--emb-ink) !important;
+  font-family: var(--emb-font-body) !important;
+  font-size: 0.9375rem !important;
+  font-weight: 500 !important;
+  padding-left: 0 !important;
+  background: transparent !important;
+}
+
+.zb-btone-themeeleven .zb-btone-field-details .cn,
+.zb-btone-themeeleven .zb-btone-field-details button,
+.zb-btone-themeeleven .zb-btone-field-details span {
+  color: var(--emb-ink) !important;
+  background: transparent !important;
+  font-family: var(--emb-font-body) !important;
+  font-size: 0.9375rem !important;
+  font-weight: 500 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+
+/* ---- Hide stray dropdown indicators on the right of rows ---- */
+
+.zb-btone-themeeleven .zb-btone-date .zb,
+.zb-btone-themeeleven .zb-btone-timezone .zb,
+.zb-btone-themeeleven .zb-btone-time .zb,
+.zb-btone-themeeleven .zb-btone-field-details .zb-arrow,
+.zb-btone-themeeleven .zb-btone-field-details [class*="arrow"],
+.zb-btone-themeeleven .zb-btone-field-details [class*="dropdown-icon"],
+.zb-btone-themeeleven .zb-btone-field-details [class*="lines"] {
+  display: none !important;
+}
+
+/* But keep left-side row icons visible */
+.zb-btone-themeeleven .zb-btone-field-icon,
+.zb-btone-themeeleven .zb-btone-field-icon .zb {
+  display: inline-flex !important;
+}
+
+
+/* ---- Replace right-side indicator with subtle "+" (matches placeholder) ---- */
+
+.zb-btone-themeeleven .zb-btone-date::after,
+.zb-btone-themeeleven .zb-btone-timezone::after,
+.zb-btone-themeeleven .zb-btone-time::after {
+  content: '+';
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--emb-muted);
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  pointer-events: none;
+}
+
+
+/* ---- Book Demo button (inline style="background-color:#F84F7B;" on inner div needs overriding) ---- */
+
+.zb-btone-themeeleven #zb-btone-booknow-button,
+.zb-btone-themeeleven .zb-btone-bookbutton {
+  background: var(--emb-brand) !important;
+  background-image: none !important;
+  background-color: var(--emb-brand) !important;
+  color: var(--emb-white) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  min-height: 60px !important;
+  height: auto !important;
+  display: flex !important;
+  align-items: stretch !important;
+  font-family: var(--emb-font-body) !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.2px !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 !important;
+  transition: background 0.2s ease !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  overflow: visible !important;
+}
+
+.zb-btone-themeeleven #zb-btone-booknow-button:hover,
+.zb-btone-themeeleven .zb-btone-bookbutton:hover {
+  background: var(--emb-brand-deep) !important;
+  background-color: var(--emb-brand-deep) !important;
+}
+
+/* Inner flex container has inline style="background-color:#F84F7B;" - override it */
+.zb-btone-themeeleven #zb-btone-booknow-button .dis-flex,
+.zb-btone-themeeleven #zb-btone-booknow-button > div {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 60px !important;
+  padding: 1.125rem 2rem !important;
+  margin: 0 !important;
+}
+
+/* Button text */
+.zb-btone-themeeleven #zb-btone-booknow-button .field-center,
+.zb-btone-themeeleven #zb-btone-booknow-button span {
+  color: var(--emb-white) !important;
+  font-family: var(--emb-font-body) !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  background: transparent !important;
+  display: inline-block !important;
+}
+
+
+/* ---- Calendar popup ---- */
+
+.zcb-calendar,
+.zcb-calendar-wrapper,
+.zcb-dropdown,
+.zcb-timeslots,
+.zcb-date-picker,
+.zb-btone-themeeleven .zcb-calendar,
+.zb-btone-themeeleven .zcb-timeslots,
+.zb-btone-themeeleven .zcb-date-picker {
+  font-family: var(--emb-font-body) !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--emb-border) !important;
+  background: var(--emb-white) !important;
+  color: var(--emb-ink) !important;
+  box-shadow: 0 10px 32px rgba(25, 22, 27, 0.08) !important;
+}
+
+.zcb-calendar-day,
+.zcb-timeslot,
+.zcb-datepicker-table-row > div {
+  color: var(--emb-ink) !important;
+  font-family: var(--emb-font-body) !important;
+  border-radius: 6px !important;
+  transition: background 0.15s ease, color 0.15s ease !important;
+}
+
+.zcb-calendar-day:hover,
+.zcb-timeslot:hover {
+  background: var(--emb-paper) !important;
+  color: var(--emb-ink) !important;
+}
+
+.zcb-calendar-day.selected,
+.zcb-calendar-day.active,
+.zcb-timeslot.selected,
+.zcb-timeslot.active,
+[class*="zb-btone"] [class*="selected"],
+[class*="zb-btone"] [class*="active"] {
+  background: var(--emb-brand) !important;
+  color: var(--emb-white) !important;
+}
+
+.zcb-calendar-day.disabled,
+.zcb-calendar-day[aria-disabled="true"] {
+  color: #C9C3CC !important;
+  background: transparent !important;
+}
+
+
+/* ---- Links ---- */
+
+.template-one-container a {
+  color: var(--emb-brand) !important;
+}
+
+.template-one-container a:hover {
+  color: var(--emb-brand-deep) !important;
+}
+
+
+/* ---- Header (Embrayse logo bar at top of full page — hidden in iframe via portal-embed) ---- */
+
+.zb-pb-header,
+.header {
+  background: var(--emb-white) !important;
+  border-bottom: 1px solid var(--emb-border) !important;
+}
+
+.zb-pb-header h1,
+.header h1 {
+  font-family: var(--emb-font-heading) !important;
+  color: var(--emb-ink) !important;
+  font-weight: 600 !important;
+}
+
+
+/* ---- Loader ---- */
+
+#zb-bookingpage-loading .zb-on-loading {
+  background: var(--emb-brand) !important;
+}
+
+#zb-bookingloading-name {
+  color: var(--emb-ink) !important;
+  font-family: var(--emb-font-body) !important;
+  font-weight: 600 !important;
+}
+
+
+/* ---- Popups ---- */
+
+.zb-common-popup,
+.info-popup,
+.primary-popup-color {
+  font-family: var(--emb-font-body) !important;
+  color: var(--emb-ink) !important;
+}

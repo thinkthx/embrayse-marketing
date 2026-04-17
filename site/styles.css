@@ -1700,7 +1700,7 @@ button {
 
 .demo-mission__book {
   text-align: center;
-  max-width: 440px;
+  max-width: 620px;
   width: 100%;
 }
 
@@ -1732,7 +1732,44 @@ button {
   max-width: 580px;
 }
 
-/* Scheduling widget */
+/* Zoho Bookings iframe */
+.demo-iframe-wrap {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+}
+
+.demo-iframe {
+  display: block;
+  width: 100%;
+  height: 750px;
+  border: 0;
+  background: transparent;
+}
+
+.demo-mission__email-fallback {
+  margin-top: 1.25rem;
+  font-size: var(--text-body-sm);
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.demo-mission__email-fallback a {
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.demo-mission__email-fallback a:hover {
+  color: var(--brand-deep);
+}
+
+/* Scheduling widget (placeholder — kept for reference) */
 .demo-widget {
   border: 1px solid var(--border-light);
   border-radius: var(--radius);
