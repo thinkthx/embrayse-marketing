@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2022.5 | Embrayse</title>
+  <meta name="description" content="Release 2022.5 introduces service check-in comments and automatic meal service selection on the Prep Report.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2022.5 | Service check-in comments">
+  <meta property="og:description" content="Release 2022.5 introduces service check-in comments and automatic meal service selection on the Prep Report.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2022-5">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="./" class="rn-nav__link">All Releases</a>
+        <a href="https://help.embrayse.com/" class="rn-nav__link">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2022.5 &ndash; Service check-in comments</h1>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Service Check-in Comments</h2>
+        <p>To round out the resident feedback capability in Embrayse, you are now able to optionally capture comments.</p>
+        <p>Comments are displayed on the <strong>Insights</strong> screen. By sorting the check-ins by comment, you can bring all of them to the top and focus on them.</p>
+
+        <div class="rn-feature__screenshots rn-feature__screenshots--two">
+          <img src="assets/2022-5/service-checkin-comment.png" alt="Capturing a comment during a service check-in" loading="lazy">
+          <img src="assets/2022-5/service-checkin-insights.png" alt="Service check-in comments displayed on the Insights screen" loading="lazy">
+        </div>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Automatic Meal Service Selection on Prep Report</h2>
+        <p>Previously when you visited the <strong>Prep Report</strong>, it always defaulted to displaying Breakfast. This functionality is now improved to automatically default to the current meal service. For example once breakfast is closed (say at 9:00am), the report will automatically display Morning Tea or Lunch (depending on whether you track Morning Tea in Embrayse) when you navigate to it.</p>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>We have added new alerts in our system backend to notify us if an unusual number of residents have simultaneously been added, updated, or archived by an integration. This was in response to a recent incident in a clinical system that had caused many residents to disappear from Embrayse. This change will allow us to act more quickly if similar issues occur in the future and notify the relevant vendor.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2024.1 | Embrayse</title>
+  <meta name="description" content="Release 2024.1 introduces a new API, multi-site support, prep report and UI improvements, and more.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2024.1 | API, multi-site support, UI improvements and more">
+  <meta property="og:description" content="Release 2024.1 introduces a new API, multi-site support, prep report and UI improvements, and more.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2024-1">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="./" class="rn-nav__link">All Releases</a>
+        <a href="https://help.embrayse.com/" class="rn-nav__link">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2024.1 &ndash; API, multi-site support, UI improvements and more</h1>
+        <p class="rn-detail__intro">We are starting off the year with a number of big changes which we are very excited to share with you. You may have noticed some of them before, but we go into some detail here.</p>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">New API</h2>
+        <p>At Embrayse we are dedicated to transparency and ensuring that as custodians of your data, we give you easy and secure access to it. Our newly designed RESTful API is a big step in this direction. You can now quickly and securely access all your data, including resident profiles, menus and meals, orders, resident feedback, and more. Additionally you can create, update, and archive residents using the API. This functionality will open up many possibilities for reporting and analytics, integrations, and custom resident admission processes. You can learn more about the API and access reference information on our knowledge base. If you are considering using the API, reach out to us for additional guidance.</p>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Multi-site Support</h2>
+        <p>Embrayse now makes it much easier for users to operate multiple sites, using a single (SSO) account. For providers that manage multiple facilities, a user can quickly switch between them in the app header. They may be given access to all or a subset of the sites operated by the provider, and may have different permissions in each site based on their needs.</p>
+
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2024-1/change-site.gif" alt="Switching between sites from the app header" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Prep Report Improvements</h2>
+        <p>We have re-arranged the information on the Prep report, to make it easier to read. The count and size now appear first, followed by texture and notes, making it easier to see the important information at a glance. Additionally, to open a resident's dietary profile there is now a small icon next to the name, rather than the whole name being clickable. This minimises the chance of opening the profile accidentally when you're trying to expand/collapse the row.</p>
+
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2024-1/prep-report-improvements.png" alt="Updated Prep report layout with count and size first" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Menu Item Quick Edit</h2>
+        <p>Previously to modify a menu item, you either had to search for it in the menu item selector, or find it on the All Items page. You can now more quickly edit an item that is already added to the menu, by using its context menu (...)</p>
+
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2024-1/quick-edit-menu-item.gif" alt="Quickly editing a menu item from its context menu" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Resident Change Notification Improvements</h2>
+        <p>When a resident's details change, whether directly by a user or through integration with your clinical system, the specifics of which fields have changed are now also displayed. This will help your staff keep on top of changes.</p>
+
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2024-1/notifications.png" alt="Resident change notifications showing which fields were updated" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>Improved error pages and messages, including adding a better 404 (not found) page.</li>
+          <li>Added a new and cleaner navigation menu when the app is displayed on a narrow display, for example on a tablet held in portrait mode.</li>
+          <li>Fixed: when a resident is first created, their photo does not display.</li>
+          <li>Fixed some intermittent performance issues.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

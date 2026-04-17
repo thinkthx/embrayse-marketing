@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2024.3 | Embrayse</title>
+  <meta name="description" content="Release 2024.3 adds cross-site menu copy, the new Meal Link feature, and enhanced order status on the Order List page.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2024.3 | Cross-site menu copy, Meal Link feature, and enhanced order status">
+  <meta property="og:description" content="Cross-site menu copy, Meal Link, and enhanced order status.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2024-3">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="./" class="rn-nav__link">All Releases</a>
+        <a href="https://help.embrayse.com/" class="rn-nav__link">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2024.3 &ndash; Cross-site menu copy, Meal Link feature, and enhanced order status</h1>
+        <p class="rn-detail__intro">Here are the latest improvements and additions to Embrayse, to help make your work even easier and more efficient.</p>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Cross-Site Menu Copy and Meal Link</h2>
+        <p>Many aged care providers choose to centralise their menus, while wanting to give each site the autonomy to make variations to the menu to respond to local produce availability and resident feedback. The menu copy feature now allows you to copy a menu not only to other weeks, but also to other sites. Copied menus can still be changed by a user with a Chef role in the destination site.</p>
+        <p>When menus are transferred to another site, meals become available through the new Meal Link feature. A linked meal is available in the second site to use when needed, but can only be modified in the original site. Future changes to a meal will automatically be reflected in all sites that share the Meal Link.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2024-3/cross-site-menu-copy.png" alt="Menu copy dialog with an option to copy a menu to another site" loading="lazy">
+        </figure>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2024-3/meal-link.gif" alt="Animated demo of the Meal Link feature keeping meals in sync across sites" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Enhanced Order Status</h2>
+        <p>We have enhanced the way order status is displayed and filtered on the Order List page. There are 5 distinct statuses for a given meal service. Being able to see, at a glance, the residents that don't have a main meal ordered will make follow ups easier. Regular orders are flagged with an "R" indicator. To make it even easier to follow up on residents with missing orders, we have updated the relevant filters to view those who are missing a main for breakfast, lunch, or dinner.</p>
+        <div class="rn-feature__screenshots rn-feature__screenshots--two">
+          <img src="assets/2024-3/order-status-guide.png" alt="Order status guide showing the five distinct statuses" loading="lazy">
+          <img src="assets/2024-3/order-status-filters.png" alt="Order status filters for residents missing a main meal" loading="lazy">
+        </div>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>Added APIs for uploading and downloading the resident profile photo.</li>
+          <li>Improved API performance.</li>
+          <li>The Prep report now shows the number of people with No Order status when looking at the meals summary.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

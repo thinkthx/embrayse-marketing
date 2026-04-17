@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2021.8 | Embrayse</title>
+  <meta name="description" content="Release 2021.8 introduces menu copy and clear, prep report improvements, and resident list filtering and sorting.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2021.8 – Copy and clear menus, prep report enhancements">
+  <meta property="og:description" content="Menu copy and clear, prep report enhancements, and improved resident list filtering and sorting.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2021-8">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="./" class="rn-nav__link">All Releases</a>
+        <a href="https://help.embrayse.com/" class="rn-nav__link">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2021.8 &ndash; Copy and clear menus, prep report enhancements</h1>
+        <p class="rn-detail__intro">This release makes menu planning faster with copy and clear tools, brings powerful new filters and grouping to the prep report, and improves the resident list for order taking.</p>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Menu copy and clear</h2>
+        <p>You can now save a lot of time and avoid mistakes by using the menu copying feature. Simply navigate to the week you want to copy, click the Copy button and select the services and weeks you want to copy to. This is especially useful if you are on, for example, a 4-weekly repeating menu. You can also just choose to copy the breakfast service, if that remains unchanged week to week. Use the Clear button to clear the entire menu, if you just want to start planning from scratch.</p>
+        <p>When using the Copy or Clear feature, any existing menus in the target week(s) will be overwritten or cleared, and any orders that were placed against them in the future will be removed. This action cannot be undone so use with care.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2021-8/copy-menu.gif" alt="Copying a menu across multiple weeks" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Prep report improvements</h2>
+        <p>It's now easier and faster than ever to get just the information you need when making preparations in the kitchen:</p>
+        <ul>
+          <li>Tapping on the resident's name displays their full details, so you can view all their dietary needs.</li>
+          <li>You can group the orders by resident instead of meal. This allows you to see everything that each individual has ordered. You can also print a docket for a single resident.</li>
+          <li>You can sort the prep report either by dining location, or by resident names.</li>
+          <li>The report can be filtered by meal. This is useful, for example, when you want to concentrate on sandwiches or salads, and print just those dockets to leave with the plate.</li>
+        </ul>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2021-8/prep-report.gif" alt="Prep report with grouping, sorting, and filtering options" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Resident list improvements</h2>
+        <p>We have also provided additional filtering and sorting options to the resident list to help with order taking:</p>
+        <ul>
+          <li>If you are taking orders for future dates, you can change the date at the top of the screen and see the order status indicators for that date.</li>
+          <li>You can sort the resident list either by room number, or by name.</li>
+          <li>You can filter the list by area / wing. This makes it easier to focus on just one area of the facility.</li>
+        </ul>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2021-8/resident-list.gif" alt="Resident list with filtering, sorting, and date selection" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>Removed the following Diet options: High energy, High protein, Low fat, Low sugar, Low sodium, Low potassium. The diet field is for hard restrictions. Going forward, use the tag feature for managing high level dietary goals like High protein.</li>
+          <li>The prep report now shows the full room number of the order instead of just "In Room".</li>
+          <li>The date selector on the ordering page now shows the day of the week in addition to the date.</li>
+          <li>When changing a resident's room number, the user is now warned if that room is already occupied by another resident.</li>
+          <li>When using the room switcher on the ordering page, if the room is vacant, this is clearly shown to the user.</li>
+          <li>In addition to the room number, the wing name is now displayed on both resident profile and order dockets.</li>
+          <li>Fixed: After changing a resident's room, taking orders sometimes causes an error.</li>
+          <li>Fixed: Filtering the prep report by tag doesn't work if the tag contains an ampersand (&amp;) character.</li>
+          <li>Fixed: Updating a meal that has regular order items associated with it causes an error.</li>
+          <li>Fixed: Tags sometimes don't print on the docket.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

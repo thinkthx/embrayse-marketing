@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2025.4 | Embrayse</title>
+  <meta name="description" content="Release 2025.4 makes the Embrayse Meals app generally available, rolls out SmithKit integration, and enhances docket printing and warning systems.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2025.4 | Embrayse Meals App, SmithKit Integration, Enhanced Data Protection and more">
+  <meta property="og:description" content="Embrayse Meals app, SmithKit integration, improved docket printing, and affected order warnings.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2025-4">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="./" class="rn-nav__link">All Releases</a>
+        <a href="https://help.embrayse.com/" class="rn-nav__link">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2025.4 &ndash; Embrayse Meals App, SmithKit Integration, Enhanced Data Protection and more</h1>
+        <p class="rn-detail__intro">In version 2025.4 we are making the Embrayse Meals mobile app generally available, rolling out integration with SmithKit, and enhancing order-docket printing and warning systems to reduce errors in your service workflow.</p>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Embrayse Meals App</h2>
+        <p>Embrayse Meals (eMeals) is a mobile app which has been designed to give residents and their loved ones unprecedented access to your food service, allowing them to view the menu and place orders, while ensuring you maintain control and safety. The app has been trialed with providers for some time, and it is now generally available to all our customers.</p>
+        <p>To start using the eMeals app please contact us at <a href="mailto:support@embrayse.com">support@embrayse.com</a> so we can assist you with set up and next steps.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2025-4/emeals-app.png" alt="Embrayse Meals mobile app on a phone, showing the menu and order screens" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">SmithKit Integration</h2>
+        <p>We're excited to introduce a new integration with our trusted partner SmithKit, giving you the ability to import your menus directly into Embrayse without re-entering information. The integration supports flexible configuration, including IDDSI texture mappings for each meal, allergen import, TV-menu display options and more. SmithKit offers a curated library of more than 4,000 recipes, helping you plan and manage diverse dining needs with ease.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2025-4/smithkit.png" alt="SmithKit integration logo" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Improved Docket Printing</h2>
+        <p>Docket printing now shows you exactly which docket is being printed and displays detailed error messages to assist with troubleshooting.</p>
+        <div class="rn-feature__screenshots rn-feature__screenshots--two">
+          <img src="assets/2025-4/print-dialog-progress.png" alt="Print dialog showing which docket is currently printing" loading="lazy">
+          <img src="assets/2025-4/print-dialog-error.png" alt="Print dialog displaying a detailed error message" loading="lazy">
+        </div>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Affected Order Warnings</h2>
+        <p>When you are busy and overcommitted, it's easy to make mistakes. For this reason we have added a number of warnings in Embrayse if a change you are about to make will impact existing resident orders. Specifically, these warnings are displayed when you are about to delete a meal, remove a menu item, clear a whole week's menu, or copy a menu.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2025-4/remove-menu-item.png" alt="Warning dialog when removing a menu item that affects existing resident orders" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>Upgraded Embrayse Meals App to support Android 16.</li>
+          <li>Resetting the TV code now requires a confirmation.</li>
+          <li>The "Something has changed" banner which is displayed upon a new release of Embrayse is no longer displayed on TV menus.</li>
+          <li>Fixed: In the eMeals app, when a resident is away, menu options and resident orders aren't displayed.</li>
+          <li>Fixed: In the eMeals app, the tick on the date which indicates orders are completed isn't always refreshed correctly.</li>
+          <li>Fixed: Sometimes modifying a resident's regular order causes an error.</li>
+          <li>Fixed: Sometimes updating a meal that has regular orders against it causes an error.</li>
+          <li>Fixed: Room number search on Prep report is not applying to dockets.</li>
+          <li>Fixed: The Content Manager role is not able to delete TV posters.</li>
+          <li>Fixed: The sorting order of meals in the Prep report does not always follow the menu.</li>
+          <li>Fixed: If a resident has a lot of tags and dietary needs, the resident search window gets a horizontal scroll bar, instead of the tags wrapping around.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
