@@ -1,0 +1,260 @@
+/* ===========================
+   LEGAL PAGES (Terms, Privacy)
+   Shared tokens, footer, buttons come from ./styles.css
+   =========================== */
+
+/* ---- Minimal nav ---- */
+
+.legal-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.legal-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 0 var(--content-px);
+  height: 76px;
+}
+
+.legal-nav__logo img {
+  height: 64px;
+  width: auto;
+  display: block;
+}
+
+.legal-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.legal-nav__link {
+  font-size: var(--text-body);
+  font-weight: 500;
+  color: var(--ink);
+  transition: color 0.2s;
+}
+
+.legal-nav__link:hover {
+  color: var(--brand);
+}
+
+/* ---- Main wrapper ---- */
+
+.legal-main {
+  padding-block: var(--section-py);
+}
+
+/* ---- Document container (narrower for legal readability) ---- */
+
+.legal-doc {
+  max-width: 720px;
+  margin-inline: auto;
+  padding-inline: var(--content-px);
+}
+
+/* ---- Back link ---- */
+
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--text-body-sm);
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  transition: color 0.2s;
+}
+
+.legal-back:hover {
+  color: var(--brand);
+}
+
+.legal-back i {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+/* ---- Document header ---- */
+
+.legal-header {
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.legal-header .kicker {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.legal-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 600;
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.legal-meta {
+  font-size: var(--text-body-sm);
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* ---- Body ---- */
+
+.legal-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.legal-body__lead {
+  font-size: var(--text-body-lg);
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.legal-body p {
+  margin-bottom: 1.25rem;
+}
+
+.legal-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Headings */
+
+.legal-body h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+  scroll-margin-top: 6rem;
+}
+
+.legal-body h2:first-child {
+  margin-top: 0;
+}
+
+.legal-body h3 {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Lists */
+
+.legal-body ul,
+.legal-body ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.legal-body li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.legal-body li::marker {
+  color: var(--brand);
+}
+
+.legal-body li:last-child {
+  margin-bottom: 0;
+}
+
+/* Inline formatting */
+
+.legal-body strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.legal-body em {
+  font-style: italic;
+}
+
+.legal-body a {
+  color: var(--brand);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.legal-body a:hover {
+  color: var(--brand-deep);
+}
+
+/* Dividers */
+
+.legal-body hr {
+  border: none;
+  border-top: 1px solid var(--border-light);
+  margin: clamp(2.5rem, 5vw, 3.5rem) 0;
+}
+
+/* Footnote block (signature, contact details) */
+
+.legal-body__footnote {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+  font-size: var(--text-body-sm);
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.legal-body__footnote p {
+  margin-bottom: 0.75rem;
+}
+
+.legal-body__footnote p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-body__footnote strong {
+  color: var(--ink);
+}
+
+/* Definitions list styling — used in Terms section 17 */
+
+.legal-body dl {
+  margin: 1.25rem 0;
+}
+
+.legal-body dt {
+  font-weight: 700;
+  color: var(--ink);
+  margin-top: 1rem;
+}
+
+.legal-body dt:first-child {
+  margin-top: 0;
+}
+
+.legal-body dd {
+  margin: 0.25rem 0 0;
+  padding-left: 0;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2026.1 | Embrayse</title>
+  <meta name="description" content="Release 2026.1 brings real-time order at service, enhanced service check-ins with new feedback insights, and custom order reports.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2026.1 | Order at Service, Enhanced Service Check-ins, and Custom Order Reports">
+  <meta property="og:description" content="Real-time order at service, enhanced service check-ins, and custom order reports.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2026-1">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="./" class="rn-nav__link">All Releases</a>
+        <a href="https://help.embrayse.com/" class="rn-nav__link">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2026.1 &ndash; Order at Service, Enhanced Service Check-ins, and Custom Order Reports</h1>
+        <p class="rn-detail__intro">This release brings service-time ordering to kitchen operations, significant improvements to how you collect and analyse resident feedback, and new reporting tools to help understand custom order patterns.</p>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Order at Service</h2>
+        <p>The Prep Report now updates in real-time, opening up the possibility of collecting orders at the point of service and having the kitchen see them right away. Instant order visibility: when an order is placed or modified, it immediately appears on the Prep Report without the need to refresh the page. New order badges: newly placed orders display a "New" badge for 30 minutes, making it easy to spot incoming orders at a glance. Synchronised delivery status: delivery checkmarks and notes automatically update across all devices viewing the Prep Report, ensuring everyone stays on the same page.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2026-1/order-at-service.gif" alt="Animated Prep Report updating in real time as a new order is placed" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Enhanced Service Check-ins</h2>
+        <p>We've made significant improvements to how you collect and analyse resident feedback through Service Check-ins. You can now choose up to 5 questions from 6 available options, including Taste, Variety, Staff Delivery, Overall Quality, Temperature, and Presentation, and reorder them by priority. For multi-site providers, Service Check-in questions are shared across all sites and can only be modified by a super admin. Users can specify the date and meal service for feedback, and when a "Poor" or "Very Poor" rating is selected, a comment is now required. The Insights page includes two new charts: one showing check-ins distributed across 30 days, and another showing the number of residents surveyed, so you can confirm your sample is representative.</p>
+        <div class="rn-feature__screenshots rn-feature__screenshots--two">
+          <img src="assets/2026-1/feedback-questions.png" alt="Service check-in question setup with drag handles to reorder questions" loading="lazy">
+          <img src="assets/2026-1/feedback-form.png" alt="Service check-in feedback form shown to staff" loading="lazy">
+        </div>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2026-1/feedback-insights.png" alt="Feedback Insights page with new charts for check-ins over time and residents surveyed" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Custom ("Other") Order Reports</h2>
+        <p>Two new reports help you understand custom orders (i.e. meals that are named "Other" or similar) more effectively. A details report lists individual custom orders with date, service, resident name, and request details, with filtering to drill into the data. A summary report identifies which custom orders are requested most frequently, so staff can review patterns and decide whether popular items warrant a menu addition or if process changes are needed.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2026-1/custom-order-reports.png" alt="Custom order reports showing details and summary views" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>Security improvements.</li>
+          <li>Database upgrade for improved performance and security.</li>
+          <li>Fixed: Changing a meal photo causes a "Not found" error.</li>
+          <li>Fixed: In some instances logins fail intermittently.</li>
+          <li>Fixed: Success and error "toast" messages occasionally display in the wrong position on screen.</li>
+          <li>Fixed: Rapidly changing the date on the Plan screen could cause the wrong menu to display.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

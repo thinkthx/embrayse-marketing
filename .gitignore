@@ -1,0 +1,18 @@
+# macOS metadata
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Playwright MCP runtime output
+.playwright-mcp/
+
+# Dev screenshots (root-level verification captures)
+*.png
+*.jpg
+!site/**
+!marketing/**
+
+# Editor / IDE
+.vscode/
+.idea/

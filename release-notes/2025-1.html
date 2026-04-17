@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Release 2025.1 | Embrayse</title>
+  <meta name="description" content="Release 2025.1 introduces Embrayse Reports, Meal Options, improved resident search, and a new read-only Viewer role.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Release 2025.1 | Reports, Meal Options, Viewer Role and more">
+  <meta property="og:description" content="Embrayse Reports, Meal Options, improved resident search, and a read-only Viewer role.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://embrayse.com/release-notes/2025-1">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="release-notes.css">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="rn-nav">
+    <div class="rn-nav__inner">
+      <a href="/" class="rn-nav__logo" aria-label="Embrayse home">
+        <img src="../assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="rn-nav__links">
+        <a href="./" class="rn-nav__link">All Releases</a>
+        <a href="https://help.embrayse.com/" class="rn-nav__link">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rn-main">
+    <article class="rn-detail">
+      <a href="./" class="rn-detail__back">
+        <i class="hgi-stroke hgi-arrow-left-01"></i>
+        All releases
+      </a>
+
+      <header class="rn-detail__header">
+        <span class="kicker">What's new</span>
+        <h1 class="rn-detail__title">Release 2025.1 &ndash; Reports, Meal Options, Viewer Role and more</h1>
+        <p class="rn-detail__intro">We are excited to share a summary of exciting new functionality in Embrayse, some of which you may already have noticed in the app.</p>
+      </header>
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Embrayse Reports</h2>
+        <p>The new reporting functionality has been available to select users for some time, and is now generally available to all our customers and providers. The Residents report provides a snapshot of dietary requirements with flexible filtering, and the Orders report takes things one step further, giving an overview of the resident dining choices over any period of time, and across any number of facilities. Reports integrate with Power BI for deeper analysis. Currently the reports are accessible Mon to Fri between 7:00am and 7:00pm AEST.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2025-1/residents-report.gif" alt="Animated demo of the Residents report with filtering" loading="lazy">
+        </figure>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2025-1/orders-report.png" alt="Orders report showing dining choices across facilities" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Meal Options</h2>
+        <p>You can now give a menu item any number of options, which can be selected when ordering that item. This is a new way to offer your residents even more choice in how they would like their meals, while saving your staff valuable time.</p>
+        <div class="rn-feature__screenshots rn-feature__screenshots--two">
+          <img src="assets/2025-1/meal-options-setup.png" alt="Meal options setup screen showing options configured on a menu item" loading="lazy">
+          <img src="assets/2025-1/meal-options.gif" alt="Animated demo of selecting meal options when placing an order" loading="lazy">
+        </div>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Improved Resident Search</h2>
+        <p>All resident search boxes now support searching not only by name, but also by room number.</p>
+        <figure class="rn-feature__screenshot">
+          <img src="assets/2025-1/search-by-room.gif" alt="Animated demo of searching for a resident by room number" loading="lazy">
+        </figure>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-feature">
+        <h2 class="rn-feature__title">Viewer Role</h2>
+        <p>A user with the new Viewer role is able to view most information in Embrayse, such as resident details, orders, feedback, and reports, but without the ability to make any changes. This is ideal for head office staff, dietitians, and auditors.</p>
+      </section>
+
+      <hr class="section-hr">
+
+      <section class="rn-improvements">
+        <h2 class="rn-improvements__title">Other Improvements and Bug Fixes</h2>
+        <ul>
+          <li>Added allergens: Mushroom, Mango, Turmeric, Chilli, and Paprika.</li>
+          <li>Added utensil: Plate Guard.</li>
+          <li>The Notes field is now visible for all menu items without having to open the Customise modal.</li>
+          <li>Focus is automatically placed in the Notes field when the modal opens.</li>
+          <li>Improvements to the recipe print view.</li>
+          <li>Room numbers are now displayed alongside resident names on the Prep report and dockets.</li>
+          <li>Enhanced support for multiple simultaneously logged-in users.</li>
+          <li>Preferred Serving Size is now optional in the customer API.</li>
+          <li>Fixed: Integration updates could create duplicate resident records.</li>
+          <li>Fixed: The Content Manager role encountered an error when uploading TV posters.</li>
+          <li>Fixed: API credential access is now correctly restricted to Super Admins.</li>
+          <li>Fixed: Renaming a sub-group removed all residents from it.</li>
+          <li>Fixed: Resident search infinite loop, delivery checkmarks, order status indicators, Regular Item date picker cropping, and Insights date dropdown positioning.</li>
+        </ul>
+      </section>
+
+      <section class="rn-cta">
+        <p>Want to see Embrayse in action?</p>
+        <div class="glow-wrap glow-wrap--btn">
+          <a href="/#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="./">Release Notes</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

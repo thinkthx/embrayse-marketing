@@ -1,0 +1,329 @@
+/* ===========================
+   RELEASE NOTES
+   Shared tokens, nav, footer, buttons come from ../styles.css
+   =========================== */
+
+/* ---- Minimal nav (release notes uses a simpler nav than the marketing site) ---- */
+
+.rn-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.rn-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: 0 var(--content-px);
+  height: 76px;
+}
+
+.rn-nav__logo img {
+  height: 64px;
+  width: auto;
+  display: block;
+}
+
+.rn-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.rn-nav__link {
+  font-size: var(--text-body);
+  font-weight: 500;
+  color: var(--ink);
+  transition: color 0.2s;
+}
+
+.rn-nav__link:hover {
+  color: var(--brand);
+}
+
+/* ---- Shared wrapper ---- */
+
+.rn-main {
+  padding-block: var(--section-py);
+}
+
+/* ===========================
+   INDEX PAGE
+   =========================== */
+
+.rn-index__header {
+  max-width: 780px;
+  margin-inline: auto;
+  padding-inline: var(--content-px);
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.rn-index__header .kicker {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.rn-index__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h1);
+  font-weight: 600;
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.rn-index__intro {
+  font-size: var(--text-body-lg);
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.rn-year-group {
+  max-width: 780px;
+  margin-inline: auto;
+  padding-inline: var(--content-px);
+  margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.rn-year-group__heading {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  font-weight: 600;
+  color: var(--ink);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.rn-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rn-list__item {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.rn-list__item:last-child {
+  border-bottom: none;
+}
+
+.rn-list__link {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.25rem 0.25rem;
+  transition: background 0.15s;
+}
+
+.rn-list__link:hover {
+  background: var(--paper);
+}
+
+.rn-list__version {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--brand);
+  font-size: var(--text-body);
+  letter-spacing: 0.3px;
+}
+
+.rn-list__title {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.4;
+  transition: color 0.2s;
+  min-width: 0;
+}
+
+.rn-list__link:hover .rn-list__title {
+  color: var(--brand);
+}
+
+/* ===========================
+   DETAIL PAGE
+   =========================== */
+
+.rn-detail {
+  max-width: 780px;
+  margin-inline: auto;
+  padding-inline: var(--content-px);
+}
+
+.rn-detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--text-body-sm);
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.rn-detail__back:hover {
+  color: var(--brand);
+}
+
+.rn-detail__back i {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.rn-detail__header {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.rn-detail__header .kicker {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.rn-detail__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.rn-detail__intro {
+  font-size: var(--text-body-lg);
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 1.25rem;
+}
+
+/* ---- Feature sections ---- */
+
+.rn-feature {
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.rn-feature__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.rn-feature p {
+  font-size: var(--text-body);
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.rn-feature p:last-child {
+  margin-bottom: 0;
+}
+
+.rn-feature__screenshot {
+  margin: 1.5rem 0 0;
+}
+
+.rn-feature__screenshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rn-feature__screenshots {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+
+@media (min-width: 640px) {
+  .rn-feature__screenshots--two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.rn-feature__screenshots img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---- Improvements list ---- */
+
+.rn-improvements {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.rn-improvements__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.rn-improvements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rn-improvements li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: var(--text-body);
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+
+.rn-improvements li::before {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
+}
+
+/* ---- Bottom CTA ---- */
+
+.rn-cta {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  background: var(--paper);
+  border-radius: var(--radius-md);
+}
+
+.rn-cta p {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.rn-cta .glow-wrap {
+  display: inline-block;
+}
+
+/* ---- Section HR inside release pages (tighter spacing than main site) ---- */
+
+.rn-detail .section-hr {
+  margin: clamp(2rem, 4vw, 3rem) 0;
+}
