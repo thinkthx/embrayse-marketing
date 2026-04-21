@@ -112,6 +112,33 @@ Netlify runs `npm run build` on every deploy and publishes the repo root, so the
 
 Only `/insights/` is built. The rest of the site remains hand-authored HTML. Don't migrate release-notes or legal pages into Eleventy unless there's a strong reason (separate PR, with user agreement).
 
+## Pull requests (Azure DevOps)
+
+This repo lives on Azure DevOps (`dev.azure.com/embrayse/Embrayse/EmbrayseMarketingWebsite`), not GitHub. `gh` does not work here. Use the Azure CLI (`az`) with the `azure-devops` extension. `rod@embrayse.com` is already signed in.
+
+**Target branch is `master`** (not `main`).
+
+**To create a PR against master and add Rod as reviewer:**
+
+```bash
+az repos pr create \
+  --organization https://dev.azure.com/embrayse \
+  --project Embrayse \
+  --repository EmbrayseMarketingWebsite \
+  --source-branch <feature-branch> \
+  --target-branch master \
+  --title "<short title>" \
+  --description "$(cat /tmp/pr-desc.md)"
+
+# Capture the returned PR id (codeReviewId in the JSON), then:
+az repos pr reviewer add \
+  --organization https://dev.azure.com/embrayse \
+  --id <pr-id> \
+  --reviewers rod@embrayse.com
+```
+
+Write the PR body to `/tmp/pr-desc.md` first with a `## Summary`, `## Commits`, and `## Test plan` section. Push the branch before running `pr create`. Don't bother trying `gh pr create` — wrong host.
+
 ## Figma source
 
 - **File:** `Embrayse Marketing 2027`
