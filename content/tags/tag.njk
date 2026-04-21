@@ -1,0 +1,30 @@
+---
+layout: base.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - posts
+    - nav
+eleventyComputed:
+  pageTitle: "{{ tag | capitalize }} | Embrayse Insights"
+  pageDescription: "Articles tagged {{ tag }} from the Embrayse team."
+permalink: /insights/tags/{{ tag | slugify }}/index.html
+eleventyExcludeFromCollections: true
+---
+<div class="insights-page">
+  <a href="/insights/" class="legal-back insights-page__back">
+    <i class="hgi-stroke hgi-arrow-left-01"></i>
+    All insights
+  </a>
+  <header class="insights-page__header">
+    <span class="kicker">Tag</span>
+    <h1>{{ tag | capitalize }}</h1>
+    <p>Articles tagged <strong>{{ tag }}</strong>.</p>
+  </header>
+
+  {% set posts = collections[tag] %}
+  {% include "card-grid.njk" %}
+</div>

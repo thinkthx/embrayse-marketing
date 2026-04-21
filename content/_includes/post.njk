@@ -1,0 +1,44 @@
+---
+layout: base.njk
+ogType: article
+---
+<article class="legal-doc insights-post">
+  <a href="/insights/" class="legal-back">
+    <i class="hgi-stroke hgi-arrow-left-01"></i>
+    All insights
+  </a>
+
+  <header class="legal-header insights-post__header">
+    <span class="kicker">Insights</span>
+    <h1 class="legal-title">{{ title }}</h1>
+    <p class="insights-meta">
+      <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
+      <span class="insights-meta__dot" aria-hidden="true">·</span>
+      <span>{{ content | readingTime }}</span>
+    </p>
+    {% if tags %}
+    <ul class="insights-tags">
+      {% for tag in tags %}
+        <li><a class="insights-tag" href="/insights/tags/{{ tag | slugify }}/">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </header>
+
+  {% if hero %}
+  <figure class="insights-hero">
+    <img src="{{ hero }}" alt="{{ hero_alt or '' }}" loading="eager">
+  </figure>
+  {% endif %}
+
+  <div class="legal-body insights-body">
+    {% if excerpt %}<p class="legal-body__lead">{{ excerpt }}</p>{% endif %}
+    {{ content | safe }}
+  </div>
+
+  <aside class="insights-cta">
+    <h2>Ready to see Embrayse in action?</h2>
+    <p>See how our aged care meal management platform can work for your facility.</p>
+    <a class="btn btn--primary" href="/#book-demo">Book a demo</a>
+  </aside>
+</article>

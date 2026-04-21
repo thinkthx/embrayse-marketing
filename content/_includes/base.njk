@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/embrayse-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="/assets/embrayse-favicon-256.png">
+  <link rel="apple-touch-icon" href="/assets/embrayse-favicon-256.png">
+
+  <title>{{ pageTitle or (title ~ " | Embrayse") or "Insights | Embrayse" }}</title>
+  <meta name="description" content="{{ pageDescription or excerpt or site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ pageTitle or title or 'Insights | Embrayse' }}">
+  <meta property="og:description" content="{{ pageDescription or excerpt or site.description }}">
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if hero %}<meta property="og:image" content="{{ site.url }}{{ page.url }}{{ hero }}">{% endif %}
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- HugeIcons -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/legal.css">
+  <link rel="stylesheet" href="/insights.css">
+
+  <link rel="alternate" type="application/rss+xml" title="Embrayse Insights" href="/insights/feed.xml">
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <header class="legal-nav">
+    <div class="legal-nav__inner">
+      <a href="/" class="legal-nav__logo" aria-label="Embrayse home">
+        <img src="/assets/embrayse-logo-black.png" alt="Embrayse" width="211" height="36">
+      </a>
+      <nav class="legal-nav__links">
+        <a href="/insights/" class="legal-nav__link">Insights</a>
+        <a href="https://help.embrayse.com/" class="legal-nav__link">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-main">
+    {{ content | safe }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="/insights/">Insights</a>
+        <a href="/release-notes/">Release Notes</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms-of-service/">Terms</a>
+        <a href="/#book-demo">Book a demo</a>
+      </nav>
+      <p class="footer__contact">Get in touch: <a href="mailto:info@embrayse.com">info@embrayse.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
