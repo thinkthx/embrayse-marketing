@@ -66,6 +66,8 @@ By scanning a food item (such as a chicken drumstick), a 3D food printer can the
 
 Believe it or not, trials of food printing in aged care homes are currently underway in Australia, in partnership with the University of Technology Sydney. Edith Cowan University is also working to bring the technology to market for people of all ages.
 
+![A 3D-printed food sample alongside research diagrams showing texture composition](3d-food-printing.jpeg)
+
 **Priority areas addressed:** Improved meal choice and quality; Alternative food service delivery models and innovation.
 
 ### 2. Nutritionally enhanced foods
@@ -87,6 +89,8 @@ Where there is no immediately indicated medical need, nutritionally enhanced foo
 While they haven't yet reached aged care, cooking robots are starting to revolutionise the restaurant industry.
 
 From smart appliances to robot arms to fully robotic kitchens, it is now possible to purchase cooking robots to help with many of the repetitive tasks undertaken in a large kitchen (such as chopping, stirring and turning). They also can play a role in quality control, similar to the DOM Pizza Checker recently implemented in Australia.
+
+![Cooking robots revolutionising the modern commercial kitchen](cooking-robots.jpeg)
 
 For aged care, cooking robots may help ease the staffing issues and financial pressures around food services. However, the high capital costs are likely to make this unfeasible for many providers.
 
@@ -110,6 +114,8 @@ A prime example is buying sous vide cook-chilled meats. These pre-cooked and the
 
 Service robots are an example of a foodservice technology that is generally suitable for food service industries, but not so much for aged care.
 
+![A service robot delivering meals in a hospitality setting](service-robots.jpeg)
+
 Anyone who has taken young children to a restaurant with serving robots likely appreciated the squeals of delight and fascination as the robots did their thing. Yet, service robots would be unlikely to get a similar reception in an aged care setting (plus they would reduce the important human-to-human element of the dining experience).
 
 However, in the interests of providing a balanced view of this technology, Sunshine Coast University Hospital has reported success with a 'hybrid model,' where robots do much of the "heavy lifting" involved in transporting meals. This has the benefit of freeing up staff time to spend more time delivering meals with care and attention at the point of service.
@@ -130,7 +136,13 @@ A variety of issues can occur while meals are making their way from kitchen to p
 
 This is one area where innovation in another industry, aviation, does have applicability to aged care services.
 
-For some time now, certain airlines have utilised meal trays that can be stored chilled, then selectively heat individual components to a desired temperature. Or, a slightly lower tech solution: a heated and refrigerated single tray trolley.
+For some time now, certain airlines have utilised meal trays that can be stored chilled, then selectively heat individual components to a desired temperature.
+
+![A multi-temperature meal tray with individually heated and chilled compartments](multi-temp-tray.jpg)
+
+Or, a slightly lower tech solution: a heated and refrigerated single tray trolley.
+
+![A heated and refrigerated single tray trolley for aged care meal delivery](heated-refrigerated-trolley.jpg)
 
 **Priority areas addressed:** Improved meal choice and quality; Food delivery, timing and temperature management.
 
@@ -155,6 +167,8 @@ While hot and cold food transport units can overcome some of the temperature iss
 Requiring all residents in an aged care home to eat lunch and dinner at the same time minimises consumer choice and independence with mealtimes. It can also increase food wastage, as all uneaten food must be discarded after a set time to comply with food safe guidelines.
 
 Hot fridge food preservers, like the Evereo products, allow cooked food to be stored at service temperature for extended periods of time. Due to accurate temperature and atmospheric control, even uncovered food can be hygienically stored for up to eight hours while preserving its original taste and texture.
+
+![Unox Evereo hot fridge food preserver keeping cooked meals at service temperature](unox-evereo.jpeg)
 
 This enables providers to offer more flexibility with mealtimes where it is requested or required by residents.
 

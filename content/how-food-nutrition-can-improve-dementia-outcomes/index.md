@@ -44,6 +44,8 @@ However, as any experienced care provider knows, **supporting people with dement
 
 ## Challenges with dementia and food intake
 
+![An older person being supported with a meal in an aged care dining room](dining-with-dementia.jpg)
+
 From changes to food preferences to difficulty participating in meal times, dementia and cognitive impairment can result in a range of obstacles to adequate dietary intake.
 
 When not addressed, these challenges can result in a "[vicious cycle](https://link.springer.com/article/10.1007/s12603-021-1616-4)," where memory impairment impacts nutritional status, which in turn results in progressively worse cognition.
@@ -94,6 +96,11 @@ Proven strategies include:
 - Facilitating food combination requests by residents, even if they might seem unusual
 
 ### Enhancing the dining environment
+
+<figure>
+  <img src="enabling-dining-environment.jpg" alt="A dementia-friendly dining environment with clear contrast, simple table settings and good lighting">
+  <figcaption>Image courtesy of Alzheimer's WA, Enabling Environments.</figcaption>
+</figure>
 
 Depending on the needs of residents, several adjustments to the dining area can enhance the experience for people with dementia.
 

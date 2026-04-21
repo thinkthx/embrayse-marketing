@@ -37,6 +37,8 @@ Many overseas-born aged care residents may enjoy and have even adopted Australia
 
 ## Food, connection and identity
 
+![A family gathered around a traditional Christmas dinner table](christmas-dinner.jpg)
+
 Across all cultures, food is used as an important source of connection with friends, loved ones, religious and cultural practices and the wider community.
 
 While nutrition is undoubtedly a primary concern when it comes to meals in aged care settings, food, cooking and dining experiences are also strongly linked to social well-being.
@@ -99,6 +101,8 @@ Both these dishes are very versatile, so they can be served according to the ava
 When it comes to Greek Christmas foods, it's hard to go past desserts.
 
 Two choices commonly served during holidays and over Christmas are Chocolate Salami (Mosaiko) and Greek Walnut Cake (Karydopita).
+
+![Chocolate Salami, a Greek no-bake festive dessert](chocolate-salami.jpg)
 
 Being a no-bake option, Chocolate Salami lends itself well to residents getting involved in the cooking and serving. Greek Walnut Cake can be prepared at scale if needed.
 
