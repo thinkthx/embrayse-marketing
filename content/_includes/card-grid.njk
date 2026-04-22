@@ -10,8 +10,6 @@
       {% endif %}
       <div class="insights-card__body">
         <p class="insights-card__meta">
-          <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
-          <span aria-hidden="true">·</span>
           <span>{{ post.templateContent | readingTime }}</span>
         </p>
         <h2 class="insights-card__title">{{ post.data.title }}</h2>
