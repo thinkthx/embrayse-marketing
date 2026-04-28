@@ -1,0 +1,30 @@
+{# Renders a card grid given a `posts` array. Used by the index and tag archives. #}
+<ul class="insights-grid" role="list">
+  {% for post in posts %}
+  <li class="insights-card">
+    <a class="insights-card__link" href="{{ post.url }}">
+      {% if post.data.hero %}
+      <div class="insights-card__media">
+        <img src="{{ post.url }}{{ post.data.hero }}" alt="{{ post.data.hero_alt or '' }}" loading="lazy">
+      </div>
+      {% endif %}
+      <div class="insights-card__body">
+        <p class="insights-card__meta">
+          <span>{{ post.templateContent | readingTime }}</span>
+        </p>
+        <h2 class="insights-card__title">{{ post.data.title }}</h2>
+        {% if post.data.excerpt %}
+        <p class="insights-card__excerpt">{{ post.data.excerpt }}</p>
+        {% endif %}
+        {% if post.data.tags %}
+        <ul class="insights-tags insights-tags--card">
+          {% for tag in post.data.tags %}
+            <li><span class="insights-tag">{{ tag }}</span></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

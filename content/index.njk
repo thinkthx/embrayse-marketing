@@ -1,0 +1,17 @@
+---
+layout: base.njk
+pageTitle: Insights | Embrayse
+pageDescription: Perspectives on food, nutrition, and operations in Australian aged care.
+permalink: /insights/index.html
+eleventyExcludeFromCollections: true
+---
+<div class="insights-page">
+  <header class="insights-page__header">
+    <span class="kicker">Insights</span>
+    <h1>Notes from aged care kitchens, dining rooms, and back offices.</h1>
+    <p>Practical writing on food, nutrition, compliance, and technology from the Embrayse team.</p>
+  </header>
+
+  {% set posts = collections.posts %}
+  {% include "card-grid.njk" %}
+</div>
