@@ -104,6 +104,10 @@ Create `release-notes/{version-slug}.html` using this exact template. Replace pl
   <!-- Styles -->
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="release-notes.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJKZ557G4Z"></script>
+  <script defer src="/assets/analytics.js"></script>
 </head>
 <body>
 
