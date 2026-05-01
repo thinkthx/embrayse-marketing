@@ -1433,8 +1433,10 @@ button {
 }
 
 .stories__author span {
-  font-size: var(--text-body-sm);
+  display: block;
+  font-size: var(--text-caption);
   color: var(--muted);
+  line-height: 1.3;
 }
 
 .stories__card p {
