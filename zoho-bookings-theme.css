@@ -1,0 +1,63 @@
+[elname="modernweb-inner-container"] {
+  background-color: #faf7f9 !important;
+}
+
+[elname="modernweb-summary-header"] {
+  background-color: #faf7f9 !important;
+}
+
+[elname="modernweb-summary-content"] {
+  background-color: #faf7f9 !important;
+}
+
+[elname="modernweb-booknow-button"] {
+  height: auto !important;
+  border-radius: 100px !important;
+}
+
+[elname="modernweb-booknow-button"] > div {
+  background-color: #cf4967 !important;
+  padding: 1rem 2rem !important;
+  font-size: 1rem;
+}
+
+[elname="modernweb-booknow-button"] > div:hover {
+  background-color: #a6354f !important;
+}
+
+[elname="modernweb-booknow-button"]:active {
+  transform: scale(0.97);
+}
+
+[elname="modernweb-proceed-button"] {
+  background-color: #cf4967 !important;
+  border: 0 !important;
+  border-radius: 100px !important;
+  padding: 1rem 2rem !important;
+  font-size: 1rem !important;
+}
+
+[elname="modernweb-proceed-button"]:hover {
+  background-color: #a6354f !important;
+}
+
+[elname="modernweb-proceed-button"]:active {
+  transform: scale(0.97);
+}
+
+[elname="modernweb-choose-container"] {
+  margin-top: 0 !important;
+}
+
+[elname="modernweb-summary-service"].dis-flex {
+  display: none !important;
+}
+
+#zb-cpb-toneasummary {
+  border: 0 !important;
+}
+
+#zb-cpb-toneasummary > [elname="modernweb-summary-content"] {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}

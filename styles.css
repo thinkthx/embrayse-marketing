@@ -1684,52 +1684,28 @@ button {
    BOOK DEMO + MISSION
    =========================== */
 
-.demo-mission {
-  padding-top: var(--section-py);
-  background: linear-gradient(180deg, var(--paper) 0%, var(--white) 40%);
-  border-top: 1px solid #ddd;
+.demo {
+  padding: var(--section-py) 0;
+  background: #FAF7F9;
+  border-bottom: 1px solid #ddd;
 }
 
-.demo-mission__grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
-}
-
-.demo-mission__book {
+.demo__inner {
   text-align: center;
   max-width: 620px;
   width: 100%;
+  margin: 0 auto;
 }
 
-.demo-mission__book .section-title {
+.demo__inner .section-title {
   margin: 0.75rem 0;
 }
 
-.demo-mission__desc {
+.demo__desc {
   font-size: var(--text-body);
   color: var(--muted);
   margin-bottom: 2rem;
   line-height: 1.5;
-}
-
-.demo-mission__separator {
-  border: none;
-  height: 12px;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-top: var(--section-py);
-  margin-bottom: var(--section-py);
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0idHJhbnNwYXJlbnQiIGQ9Ik0wIDBoMTJ2MTJIMHoiLz48Y2lyY2xlIGN4PSI2IiBjeT0iNiIgcj0iMS41IiBmaWxsPSIjZGRkZGRkIi8+PC9zdmc+");
-  background-repeat: repeat-x;
-  background-position: center;
-}
-
-.demo-mission__mission {
-  text-align: center;
-  max-width: 580px;
 }
 
 /* Zoho Bookings iframe */
@@ -1737,8 +1713,6 @@ button {
   width: 100%;
   border-radius: var(--radius-md);
   overflow: hidden;
-  background: var(--white);
-  border: 1px solid var(--border-light);
 }
 
 .demo-iframe {
@@ -1749,14 +1723,14 @@ button {
   background: transparent;
 }
 
-.demo-mission__email-fallback {
+.demo__email-fallback {
   margin-top: 1.25rem;
   font-size: var(--text-body-sm);
   color: var(--muted);
   line-height: 1.5;
 }
 
-.demo-mission__email-fallback a {
+.demo__email-fallback a {
   color: var(--brand);
   font-weight: 600;
   text-decoration: underline;
@@ -1765,7 +1739,7 @@ button {
   transition: color 0.2s;
 }
 
-.demo-mission__email-fallback a:hover {
+.demo__email-fallback a:hover {
   color: var(--brand-deep);
 }
 
@@ -1813,19 +1787,34 @@ button {
   border-radius: 0;
 }
 
-/* Mission */
-.demo-mission__mission .section-title {
+/* About */
+.about {
+  padding-top: var(--section-py);
+  background: var(--white);
+}
+
+.about__content {
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.about__content .section-title {
   margin: 0.75rem 0 1.5rem;
 }
 
-.demo-mission__mission p {
+.about__content p {
   font-size: var(--text-body-sm);
   color: var(--muted);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.demo-mission__brisbane img {
+.about__brisbane {
+  margin-top: 3rem;
+}
+
+.about__brisbane img {
   width: 100%;
   height: auto;
   display: block;
