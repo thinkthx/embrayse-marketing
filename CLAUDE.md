@@ -29,7 +29,7 @@ Use `live-server` when working on the main site. Use `npm run dev` when iteratin
 This is the core development loop. Follow it for every section:
 
 1. **Reference Figma** — Screenshot the target section from Figma (node `8442:1777` in `Embrayse Marketing 2027`) using Figma Console MCP tools. Compare against the Figma design throughout.
-2. **Use pre-exported assets** — All assets are already exported in `assets/`. Most are @2x, some @4x. Size `<img>` elements to match their Figma frame dimensions (not the retina pixel dimensions).
+2. **Use pre-exported assets** — All assets are already exported in `assets/`. Most are @2x, some @4x. Size `<img>` elements to match their Figma frame dimensions (not the retina pixel dimensions). Filenames in `assets/` must be lowercase kebab-case (no spaces, no uppercase) — rename Figma exports before committing.
 3. **Write HTML** — Semantic, accessible markup. Mobile-first structure.
 4. **Write CSS** — Mobile-first, using the design tokens below. Add responsive breakpoints.
 5. **Verify with Playwright** — Serve locally, screenshot at key viewports (375px, 768px, 1024px, 1440px), compare against Figma. Iterate until accurate.
@@ -47,16 +47,16 @@ This is the core development loop. Follow it for every section:
 ├── legal.css               # Legal page styles (terms, privacy)
 ├── assets/                 # All pre-exported from Figma (flat directory)
 │   ├── embrayse-logo-black.png
-│   ├── Hero-Screen.png, screen 1 - orders.png, Menu iPad.png
-│   ├── Section-HeroImage-TVDiningRoom.jpg, Section-HeroImage-People.jpg
-│   ├── Mission brisbane-bg 1.jpg, paper-sheet-redacted.jpg
-│   ├── Customer Tile *.png, Customer *.png (logos)
-│   ├── integrations *.png (partner logos)
-│   ├── Profile *.png (testimonial photos)
-│   ├── Feedback *.png (dashboard + surveys)
-│   ├── eMealsPhone *.png (mobile app mockups)
-│   ├── MenuPlanner Image.png
-│   └── Operational Intelligence - *.png (carousel screenshots)
+│   ├── hero-screen.png, screen-1-orders.png, menu-ipad.png
+│   ├── section-hero-image-tv-dining-room.jpg, section-hero-image-people.jpg
+│   ├── mission-brisbane-bg-1.jpg, paper-sheet-redacted.jpg
+│   ├── customer-tile-*.png, customer-*.png (logos)
+│   ├── integrations-*.png (partner logos)
+│   ├── profile-*.png (testimonial photos)
+│   ├── feedback-*.png (dashboard + surveys)
+│   ├── emeals-phone-*.png (mobile app mockups)
+│   ├── menu-planner-image.png
+│   └── operational-intelligence-*.png (carousel screenshots)
 ├── release-notes/          # Product release notes (index + per-release pages)
 │   ├── index.html          # Listing of all releases, grouped by year
 │   ├── release-notes.css   # Release-notes-specific styles
