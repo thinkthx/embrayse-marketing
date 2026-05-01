@@ -22,8 +22,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pridi:wght@600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-  <!-- HugeIcons -->
-  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+  <!-- HugeIcons (non-blocking — icons flash in after page renders) -->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"></noscript>
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
