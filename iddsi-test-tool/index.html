@@ -1,0 +1,52 @@
+<!--
+  IDDSI Test Tool — SPA wrapper.
+
+  The actual app is a React SPA built and uploaded to Azure blob storage:
+    https://embrayseprdpublicstorage.blob.core.windows.net/iddsi-tool/
+
+  IMPORTANT: the CSS and JS filenames below contain build hashes that
+  change every time the SPA is rebuilt. When the SPA is redeployed,
+  update the three asset URLs in this file to match the new build
+  output (one CSS, one chunk JS, one main JS).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/embrayse-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="/assets/embrayse-favicon-256.png">
+  <link rel="apple-touch-icon" href="/assets/embrayse-favicon-256.png">
+  <meta name="robots" content="noindex, nofollow">
+  <title>IDDSI Test Tool | Embrayse</title>
+  <meta name="description" content="Use this tool to test food and drink textures for adults with dysphagia, according to the IDDSI Framework.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IDDSI Test Tool | Embrayse">
+  <meta property="og:description" content="Use this tool to test food and drink textures for adults with dysphagia, according to the IDDSI Framework.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://embrayse.com/iddsi-test-tool">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- SPA hero image preload (matches the Webflow version) -->
+  <link rel="preload" as="image" href="https://www.trueanglemedical.com/wp-content/uploads/2022/07/Platter-of-IDDSI-level-4-Vegetables-Tasting-platter.jpg">
+
+  <!-- SPA stylesheet (Azure blob storage) -->
+  <link rel="stylesheet" href="https://embrayseprdpublicstorage.blob.core.windows.net/iddsi-tool/static/css/main.db685fd9.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJKZ557G4Z"></script>
+  <script defer src="/assets/analytics.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- SPA scripts (Azure blob storage) -->
+  <script src="https://embrayseprdpublicstorage.blob.core.windows.net/iddsi-tool/static/js/787.3935ea23.chunk.js"></script>
+  <script src="https://embrayseprdpublicstorage.blob.core.windows.net/iddsi-tool/static/js/main.cc0da8f7.js"></script>
+</body>
+</html>
