@@ -28,6 +28,53 @@ if (navToggle && navLinks) {
 }
 
 /* ===========================
+   AUTO-HIDE NAV ON SCROLL
+   =========================== */
+
+(() => {
+  const nav = document.getElementById('nav');
+  if (!nav) return;
+
+  let lastY = window.scrollY;
+  let ticking = false;
+  const threshold = 80;
+
+  const update = () => {
+    const y = window.scrollY;
+    const delta = y - lastY;
+    const menuOpen = navLinks && navLinks.classList.contains('is-open');
+
+    if (menuOpen || y < threshold) {
+      nav.classList.remove('nav--hidden');
+    } else if (delta > 6) {
+      nav.classList.add('nav--hidden');
+    } else if (delta < 0) {
+      nav.classList.remove('nav--hidden');
+    }
+
+    lastY = y;
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Keep nav visible after anchor link clicks
+  const keepVisible = () => {
+    nav.classList.remove('nav--hidden');
+    requestAnimationFrame(() => { lastY = window.scrollY; });
+  };
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', () => setTimeout(keepVisible, 50));
+  });
+  window.addEventListener('hashchange', () => setTimeout(keepVisible, 50));
+})();
+
+/* ===========================
    CAROUSEL ARROWS
    =========================== */
 
