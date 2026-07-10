@@ -416,6 +416,12 @@ body:has(> .nav) section[id] {
   max-width: 620px;
 }
 
+.hero__cta-note {
+  margin-top: -1.25rem;
+  font-size: var(--text-caption);
+  color: var(--muted);
+}
+
 .hero__screen {
   max-width: 817px;
   margin: clamp(2rem, 4vw, 3rem) auto 0;
@@ -1532,6 +1538,34 @@ body:has(> .nav) section[id] {
 }
 
 /* ===========================
+   STANDARD 6
+   =========================== */
+
+.standard6 {
+  padding: var(--section-py) 0;
+  background: var(--paper);
+  text-align: center;
+}
+
+.standard6__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.standard6__desc {
+  font-size: var(--text-body-lg);
+  color: var(--muted);
+  line-height: 1.4;
+  max-width: 640px;
+}
+
+.standard6__inner .btn {
+  margin-top: 0.5rem;
+}
+
+/* ===========================
    PLAN & PRICING
    =========================== */
 
@@ -1766,6 +1800,28 @@ body:has(> .nav) section[id] {
 
 .pricing__cta {
   width: 100%;
+}
+
+/* ===========================
+   FAQ
+   =========================== */
+
+.faq {
+  padding: var(--section-py) 0;
+}
+
+.faq__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.faq__accordion {
+  max-width: 760px;
+  margin-inline: auto;
 }
 
 /* ===========================

@@ -10,6 +10,7 @@
   <link rel="apple-touch-icon" href="/assets/embrayse-favicon-256.png">
   <title>Embrayse — Aged Care Menu Planning & Catering Management Software</title>
   <meta name="description" content="Aged care menu planning and catering management software for residential aged care. IDDSI compliance, dietary management, and kitchen management in one platform.">
+  <link rel="canonical" href="https://embrayse.com/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Embrayse — Aged Care Menu Planning & Catering Management Software">
@@ -40,6 +41,78 @@
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJKZ557G4Z"></script>
   <script defer src="/assets/analytics.js"></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Embrayse",
+        "url": "https://embrayse.com/",
+        "logo": "https://embrayse.com/assets/embrayse-logo-black.png",
+        "email": "info@embrayse.com",
+        "foundingDate": "2021",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Brisbane",
+          "addressRegion": "QLD",
+          "addressCountry": "AU"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Embrayse",
+        "url": "https://embrayse.com/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Aged care menu planning and catering management software for residential aged care. IDDSI compliance, dietary management, and kitchen management in one platform.",
+        "offers": {
+          "@type": "Offer",
+          "price": "7.00",
+          "priceCurrency": "AUD",
+          "description": "$7 per bed per month (AUD, excluding GST), plus one-time setup fee"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does it take to get set up?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Most facilities are live within weeks, not months. We handle implementation, data migration, and onsite training, so the heavy lifting sits with us, not your team." }
+          },
+          {
+            "@type": "Question",
+            "name": "We already use another system. How painful is switching?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Less painful than staying. Many of our customers moved to Embrayse from other catering systems. We migrate your resident dietary data as part of setup, and your team trains on the real thing before go-live." }
+          },
+          {
+            "@type": "Question",
+            "name": "Will our kitchen and care staff actually use it?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Embrayse is built for non-technical teams, and staff with limited computer skills pick it up quickly with minimal training." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is our data hosted, and is it secure?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Your data is hosted on Microsoft Azure in Australia, on IRAP-certified cloud infrastructure with SSO and role-based access. We are also in the process of obtaining ISO 27001 certification." }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the setup fee include?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Everything needed to go live: implementation, data migration, and onsite training for your team. After that, it's $7 per bed per month with unlimited meals and staff accounts." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if it doesn't work out for us?",
+            "acceptedAnswer": { "@type": "Answer", "text": "There are no lock-in contracts, and every plan comes with a 60-day full refund policy. If Embrayse isn't right for your home, you walk away with nothing lost." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -73,16 +146,20 @@
       <h1 class="hero__title">Aged care catering, made simple. And smart.</h1>
       <p class="hero__subtitle">Aged care menu planning and catering management software. From kitchen to clinical care. Other tools digitise the complexity. Embrayse removes it.</p>
       <div class="glow-wrap glow-wrap--btn"><a href="#book-demo" class="btn btn--primary btn--lg">Book your demo</a></div>
+      <p class="hero__cta-note">30 minutes. No obligation.</p>
     </div>
     <div class="hero__screen">
-      <img src="assets/hero-screen.png" alt="Embrayse aged care menu planning software showing resident meal orders with dietary alerts" width="817" height="461" loading="eager">
+      <picture>
+        <source srcset="assets/hero-screen.webp" type="image/webp">
+        <img src="assets/hero-screen.png" alt="Embrayse aged care menu planning software showing resident meal orders with dietary alerts" width="817" height="461" loading="eager" fetchpriority="high">
+      </picture>
     </div>
   </section>
 
   <!-- Customer Logos -->
   <section class="customers">
     <div class="customers__inner">
-      <p class="customers__label">Trusted by homes across Australia and the UK</p>
+      <p class="customers__label">Trusted by 45+ homes and 5,000+ beds across Australia and the UK</p>
       <div class="customers__marquee">
         <div class="customers__track">
           <img src="assets/customer-tile-southern-cross-care.png" alt="Southern Cross Care" loading="lazy">
@@ -134,7 +211,10 @@
       <!-- Pain points -->
       <div class="challenge__pain reveal">
         <div class="challenge__photo">
-          <img src="assets/paper-sheet-redacted.jpg" alt="Handwritten dietary requirements on a laminated sheet" width="447" height="258" loading="lazy">
+          <picture>
+            <source srcset="assets/paper-sheet-redacted.webp" type="image/webp">
+            <img src="assets/paper-sheet-redacted.jpg" alt="Handwritten dietary requirements on a laminated sheet" width="447" height="258" loading="lazy" decoding="async">
+          </picture>
         </div>
         <ul class="challenge__list">
           <li>
@@ -240,7 +320,10 @@
       <!-- iPad + staff simplicity -->
       <div class="safety__simple reveal">
         <div class="safety__ipad">
-          <img src="assets/menu-ipad.png" alt="Aged care menu displayed on an iPad for resident meal selection" width="702" height="513" loading="lazy">
+          <picture>
+            <source srcset="assets/menu-ipad.webp" type="image/webp">
+            <img src="assets/menu-ipad.png" alt="Aged care menu displayed on an iPad for resident meal selection" width="702" height="513" loading="lazy" decoding="async">
+          </picture>
         </div>
         <div class="safety__simple-copy">
           <h3>Your staff signed up to <strong class="text-brand">care for people</strong>, not learn complex software.</h3>
@@ -252,7 +335,10 @@
 
   <!-- Hero Image — TV in Dining Room -->
   <div class="hero-image reveal">
-    <img src="assets/section-hero-image-tv-dining-room.jpg" alt="TV displaying the Embrayse menu in an aged care dining room" width="1440" height="617" loading="lazy">
+    <picture>
+      <source type="image/webp" srcset="assets/section-hero-image-tv-dining-room-768.webp 768w, assets/section-hero-image-tv-dining-room-1440.webp 1440w, assets/section-hero-image-tv-dining-room-1662.webp 1662w" sizes="100vw">
+      <img src="assets/section-hero-image-tv-dining-room.jpg" alt="TV displaying the Embrayse menu in an aged care dining room" width="1440" height="617" loading="lazy" decoding="async">
+    </picture>
   </div>
 
   <!-- Operational Intelligence -->
@@ -312,7 +398,10 @@
           <img src="assets/feedback-survey-right.png" alt="Service check-in results" class="feedback__survey feedback__survey--right" width="220" height="320" loading="lazy">
         </div>
         <div class="feedback__dashboard">
-          <img src="assets/feedback-dashboard.png" alt="Embrayse insights dashboard showing resident feedback metrics" width="817" height="565" loading="lazy">
+          <picture>
+            <source srcset="assets/feedback-dashboard.webp" type="image/webp">
+            <img src="assets/feedback-dashboard.png" alt="Embrayse insights dashboard showing resident feedback metrics" width="817" height="565" loading="lazy" decoding="async">
+          </picture>
         </div>
       </div>
     </div>
@@ -329,8 +418,14 @@
 
       <div class="personalised__content reveal">
         <div class="personalised__phones">
-          <img src="assets/emeals-phone-back.png" alt="eMeals app showing resident meal options" class="personalised__phone personalised__phone--back" loading="lazy">
-          <img src="assets/emeals-phone-front.png" alt="eMeals app showing meal detail" class="personalised__phone personalised__phone--front" loading="lazy">
+          <picture>
+            <source srcset="assets/emeals-phone-back.webp" type="image/webp">
+            <img src="assets/emeals-phone-back.png" alt="eMeals app showing resident meal options" class="personalised__phone personalised__phone--back" loading="lazy" decoding="async">
+          </picture>
+          <picture>
+            <source srcset="assets/emeals-phone-front.webp" type="image/webp">
+            <img src="assets/emeals-phone-front.png" alt="eMeals app showing meal detail" class="personalised__phone personalised__phone--front" loading="lazy" decoding="async">
+          </picture>
         </div>
         <div class="personalised__right">
           <div class="accordion" data-accordion-group="personalised">
@@ -417,7 +512,10 @@
 
   <!-- Hero Image — Care Provider with Resident -->
   <div class="hero-image reveal">
-    <img src="assets/section-hero-image-people.jpg" alt="Care provider showing an aged care resident meal options on a tablet" width="1440" height="617" loading="lazy">
+    <picture>
+      <source type="image/webp" srcset="assets/section-hero-image-people-768.webp 768w, assets/section-hero-image-people-1440.webp 1440w, assets/section-hero-image-people-2878.webp 2878w" sizes="100vw">
+      <img src="assets/section-hero-image-people.jpg" alt="Care provider showing an aged care resident meal options on a tablet" width="1440" height="617" loading="lazy" decoding="async">
+    </picture>
   </div>
 
   <!-- Success Stories -->
@@ -464,6 +562,20 @@
             <p>"We now have evidence of what a resident is receiving without the need for a paper trail."</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-hr">
+
+  <!-- Standard 6 -->
+  <section class="standard6">
+    <div class="container container--narrow">
+      <div class="standard6__inner reveal">
+        <span class="kicker">Standard 6</span>
+        <h2 class="section-title">The strengthened Quality Standards are now in force</h2>
+        <p class="standard6__desc">Standard 6 asks you to show that every resident's dietary needs are met at every meal. Embrayse makes that evidence a by-product of daily service, not a scramble before the audit.</p>
+        <a href="#book-demo" class="btn btn--primary btn--lg">Book your demo</a>
       </div>
     </div>
   </section>
@@ -531,8 +643,65 @@
 
           <p class="pricing__note">Hardware devices cost not included.<br>All prices in <strong>Australian Dollars</strong> and <strong>exclude GST</strong>.</p>
 
-          <a href="#book-demo" class="btn btn--primary btn--lg pricing__cta">Get started</a>
+          <a href="#book-demo" class="btn btn--primary btn--lg pricing__cta">Book your demo</a>
         </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container container--narrow">
+      <header class="faq__header reveal">
+        <span class="kicker">Common questions</span>
+        <h2 class="section-title">Answers before you ask</h2>
+      </header>
+
+      <div class="faq__accordion reveal">
+        <div class="accordion" data-accordion-group="faq">
+          <div class="accordion__item is-open" data-accordion>
+            <button class="accordion__trigger" aria-expanded="true">
+              <span class="accordion__plus"></span>
+              <span class="accordion__label">How long does it take to get set up?</span>
+            </button>
+            <div class="accordion__inline"><strong>How long does it take to get set up?</strong> Most facilities are live within weeks, not months. We handle implementation, data migration, and onsite training, so the heavy lifting sits with us, not your team.</div>
+          </div>
+          <div class="accordion__item" data-accordion>
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__plus"></span>
+              <span class="accordion__label">We already use another system. How painful is switching?</span>
+            </button>
+            <div class="accordion__inline"><strong>We already use another system. How painful is switching?</strong> Less painful than staying. Many of our customers moved to Embrayse from other catering systems. We migrate your resident dietary data as part of setup, and your team trains on the real thing before go-live.</div>
+          </div>
+          <div class="accordion__item" data-accordion>
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__plus"></span>
+              <span class="accordion__label">Will our kitchen and care staff actually use it?</span>
+            </button>
+            <div class="accordion__inline"><strong>Will our kitchen and care staff actually use it?</strong> Yes. Embrayse is built for non-technical teams, and staff with limited computer skills pick it up quickly with minimal training. In the words of one supervisor: "Even staff with limited computer skills quickly learnt their way around."</div>
+          </div>
+          <div class="accordion__item" data-accordion>
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__plus"></span>
+              <span class="accordion__label">Where is our data hosted, and is it secure?</span>
+            </button>
+            <div class="accordion__inline"><strong>Where is our data hosted, and is it secure?</strong> Your data is hosted on Microsoft Azure in Australia, on IRAP-certified cloud infrastructure with SSO and role-based access. We are also in the process of obtaining ISO 27001 certification.</div>
+          </div>
+          <div class="accordion__item" data-accordion>
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__plus"></span>
+              <span class="accordion__label">What does the setup fee include?</span>
+            </button>
+            <div class="accordion__inline"><strong>What does the setup fee include?</strong> Everything needed to go live: implementation, data migration, and onsite training for your team. After that, it's $7 per bed per month with unlimited meals and staff accounts.</div>
+          </div>
+          <div class="accordion__item" data-accordion>
+            <button class="accordion__trigger" aria-expanded="false">
+              <span class="accordion__plus"></span>
+              <span class="accordion__label">What if it doesn't work out for us?</span>
+            </button>
+            <div class="accordion__inline"><strong>What if it doesn't work out for us?</strong> There are no lock-in contracts, and every plan comes with a 60-day full refund policy. If Embrayse isn't right for your home, you walk away with nothing lost.</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -606,7 +775,10 @@
 
     <!-- Brisbane skyline -->
     <div class="about__brisbane">
-      <img src="assets/mission-brisbane-bg-1.jpg" alt="Brisbane skyline" width="1440" height="589" loading="lazy">
+      <picture>
+        <source type="image/webp" srcset="assets/mission-brisbane-bg-1-768.webp 768w, assets/mission-brisbane-bg-1-1440.webp 1440w, assets/mission-brisbane-bg-1-2880.webp 2880w" sizes="100vw">
+        <img src="assets/mission-brisbane-bg-1.jpg" alt="Brisbane skyline" width="1440" height="589" loading="lazy" decoding="async">
+      </picture>
     </div>
   </section>
 
