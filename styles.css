@@ -1544,6 +1544,8 @@ body:has(> .nav) section[id] {
 .standard6 {
   padding: var(--section-py) 0;
   background: var(--paper);
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   text-align: center;
 }
 
@@ -1555,10 +1557,10 @@ body:has(> .nav) section[id] {
 }
 
 .standard6__desc {
-  font-size: var(--text-body-lg);
+  font-size: var(--text-body);
   color: var(--muted);
-  line-height: 1.4;
-  max-width: 640px;
+  line-height: 1.5;
+  max-width: 580px;
 }
 
 .standard6__inner .btn {
